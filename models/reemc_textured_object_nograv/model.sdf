@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <model name="reemc_textured_object_nograv">
+    <static>0</static>
+    <link name="link">
+      <gravity>false</gravity>
+      <collision name="colision1">
+        <pose>0 0 1.2 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>file://models/reemc_textured_object/meshes/mesh.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <bounce />
+          <friction>
+            <ode />
+          </friction>
+          <contact>
+            <ode />
+          </contact>
+        </surface>
+      </collision>
+      <visual name="visual1">
+        <pose>0 0 1.2 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>file://models/reemc_textured_object/meshes/mesh.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

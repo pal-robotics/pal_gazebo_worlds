@@ -1,0 +1,4 @@
+The model.sdf file has been auto-generated from bauman_walls.png.
+
+Use https://github.com/RainCT/img2sdf if you need to re-generate it:
+  $ img2sdf.py bauman_walls.png 0.0353 --name=Bauman > model.sdf

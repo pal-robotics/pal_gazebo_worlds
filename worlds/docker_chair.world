@@ -1,0 +1,241 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <physics type="ode">
+      <gravity>0 0 -9.81</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>20</iters>
+          <sor>1.0</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100.0</contact_max_correcting_vel>
+          <contact_surface_layer>0.0</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="wall_1_model">
+      <pose>-0 -1.5 0.25 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_1_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>5.25 0.10 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>5.25 0.10 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_2_model">
+      <pose>0 1.5 0.25 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_2_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>5.25 0.1 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>5.25 0.1 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_3_model">
+      <pose> 2.6 0 0.25 0 0 1.57</pose>
+      <static>true</static>
+      <link name="wall_3_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>3.0 0.2 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>3.0 0.2 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_4_model">
+      <pose>-2.6 0 0.25 0 0 1.57</pose>
+      <static>true</static>
+      <link name="wall_4_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>3.0 0.2 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>3.0 0.2 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="cylinder_1">
+      <pose>0.65 0.83 0.25 0 0 0</pose>
+        <static>true</static>
+        <link name='cylinder_1_body'>
+          <collision name="collision">
+          <geometry>
+            <cylinder>
+              <length>0.5</length>
+              <radius>0.22</radius>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <length>0.5</length>
+              <radius>0.22</radius>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="cylinder_2">
+      <pose>1.580 -0.5 0.25 0 0 0</pose>
+        <static>true</static>
+        <link name='cylinder_2_body'>
+          <collision name="collision">
+          <geometry>
+            <cylinder>
+              <length>0.5</length>
+              <radius>0.22</radius>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <length>0.5</length>
+              <radius>0.22</radius>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="stairs_model">
+      <pose>-1.0 0 0.25 0 0 0</pose>
+      <static>true</static>
+      <link name="stairs_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.45 0.68 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.5 0.8 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <include>
+      <uri>model://ikea_stefan_chair</uri>
+      <pose>0.55 -1.2 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>model://test2</uri>
+      <pose>0.55 0.4 0 0 0 1.57</pose>
+    </include>
+  </world>
+</sdf>

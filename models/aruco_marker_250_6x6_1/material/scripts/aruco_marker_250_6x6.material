@@ -1,0 +1,14 @@
+material Aruco/aruco_marker_250_6x6_1
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Aruco_6x6_250_0.png
+			}
+		}
+	}
+}
+

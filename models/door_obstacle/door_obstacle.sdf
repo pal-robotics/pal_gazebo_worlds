@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="door_obstacle">
+    <static>1</static>
+    <link name="door_obstacle_link">
+      <!-- ramp up -->
+      <collision name="door_obstacle_collision">
+        <pose>0. 0. 0.0075 0. 0. 0.</pose>
+        <geometry>
+          <box>
+            <size>1. 0.05 0.015</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="door_obstacle_visual">
+        <pose>0. 0. 0.0075 0. 0. 0.</pose>
+        <geometry>
+          <box>
+            <size>1. 0.05 0.015</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0.</linear>
+        <angular>0.</angular>
+      </velocity_decay>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+      <gravity>1</gravity>
+    </link>
+  </model>
+</sdf>

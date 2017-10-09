@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>pal_gazebo_worlds</name>
+  <version>1.0.0</version>
+  <description>Simulation worlds for PAL robots.</description>
+  <maintainer email="victor.lopez@pal-robotics.com">Victor Lopez</maintainer>
+  <license>Proprietary</license>
+  <author email="victor.lopez@pal-robotics.com">Victor Lopez</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
