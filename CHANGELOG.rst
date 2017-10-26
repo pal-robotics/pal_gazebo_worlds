@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Don't install config dir
+* Contributors: Victor Lopez
+
 1.0.1 (2017-10-26)
 ------------------
 * Add pal_gazebo_worlds with reemc worlds
