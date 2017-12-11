@@ -32,29 +32,29 @@
 
     <include>
       <uri>model://macrolink_table</uri>
-      <pose>1.0 0.4 0 0 0 0</pose>
+      <pose>0.8 0.35 0 0 0 0</pose>
     </include>
     <include>
-      <uri>model://aruco_marker_original_238</uri>
-      <pose>0.8 0.4 0.73 0 0 0</pose>
+      <uri>model://aruco_marker_6cm_238</uri>
+      <pose>0.6 0.25 0.73 0 0 -1.57</pose>
     </include>
     <include>
-      <uri>model://aruco_marker_original_582</uri>
-      <pose>0.8 0.1 0.73 0 0 0</pose>
+      <uri>model://aruco_marker_6cm_582</uri>
+      <pose>0.6 0.12 0.73 0 0 -1.57</pose>
     </include>
-    <!--
+
     <include>
       <uri>model://macrolink_table</uri>
-      <pose>1.0 -0.4 0 0 0 0</pose>
+      <pose>0.8 -0.35 0 0 0 0</pose>
     </include>
     <include>
-      <uri>model://aruco_marker_original_26</uri>
-      <pose>1. 0.4 0.73 0 0 0</pose>
+      <uri>model://aruco_marker_6cm_26</uri>
+      <pose>0.6 -0.12 0.73 0 0 -1.57</pose>
     </include>
     <include>
-      <uri>model://aruco_marker_original_63</uri>
-      <pose>1. -0.4 0.73 0 0 0</pose>
+      <uri>model://aruco_marker_6cm_63</uri>
+      <pose>0.6 -0.25 0.73 0 0 -1.57</pose>
     </include>
-    -->
+
   </world>
 </sdf>
