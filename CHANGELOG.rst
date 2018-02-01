@@ -2,6 +2,12 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add gazebo resource path
+* Clean unused worlds
+* Contributors: Victor Lopez
+
 1.0.2 (2017-10-26)
 ------------------
 * Don't install config dir
