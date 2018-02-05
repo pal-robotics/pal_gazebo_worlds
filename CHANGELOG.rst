@@ -2,6 +2,12 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix missing exec dependency
+* Add tests
+* Contributors: Victor Lopez
+
 1.0.3 (2018-02-01)
 ------------------
 * Add gazebo resource path
