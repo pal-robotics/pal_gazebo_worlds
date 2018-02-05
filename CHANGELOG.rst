@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2018-02-05)
+------------------
 * Fix missing exec dependency
 * Add tests
 * Contributors: Victor Lopez
