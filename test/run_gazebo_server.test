@@ -1,0 +1,10 @@
+<launch>
+  <!-- Load Gazebo empty world with pmb2 -->
+  <include file="$(find pal_gazebo_worlds)/launch/pal_gazebo.launch">
+    <arg name="world" value="small_office" />
+    <arg name="gui" value="false" />
+  </include>
+
+  <!-- Run tests -->
+  <test test-name="run_gazebo_server_test" pkg="pal_gazebo_worlds" type="run_gazebo_server-test" time-limit="20.0"/>
+</launch>
