@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.4 (2018-02-05)
+------------------
 * Revert "Add gazebo resource path"
   This reverts commit 7ce1648872f8a5b3b9199d7f9a18e21639224f46.
   GAZEBO_RESOURCE_PATH is not properly used in indigo
