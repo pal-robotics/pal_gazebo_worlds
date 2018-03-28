@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+  Copyright (c) 2018, PAL Robotics, S.L.
+  All rights reserved.
+
+  This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to
+  Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+-->
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="chessboard" params="name target_model target_link pose">
+    <gazebo>
+      <plugin name="${name}_plugin}" filename="libgazebo_attachment.so">
+          <target_model_name>${target_model}</target_model_name>
+          <target_link_name>${target_link}</target_link_name>
+          <local_link_name>${name}_link</local_link_name>
+          <pose>
+            ${pose}
+          </pose>
+      </plugin>
+      <material>White</material>
+    </gazebo>
+    <link name="${name}_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="0.01" />
+        <inertia ixx="0.1"  ixy="0"  ixz="0" iyy="0.1" iyz="0" izz="0.1" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_gazebo_worlds/meshes/chessboard/chessboard.dae"/>
+        </geometry>
+        <material name="White" />
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_gazebo_worlds/meshes/chessboard/chessboard.dae"/>
+        </geometry>
+        <material name="White" />
+      </collision>
+
+    </link>
+  </xacro:macro>
+</robot>
+
