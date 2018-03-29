@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+  Copyright (c) 2018, PAL Robotics, S.L.
+  All rights reserved.
+
+  This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to
+  Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+-->
+<robot  xmlns:xacro="http://www.ros.org/wiki/xacro"
+        name="chessboard" >
+  <!-- Example on how to include the chessboard for eye-hand calibration -->
+  <xacro:include filename="$(find pal_gazebo_worlds)/urdf/chessboard/chessboard.urdf.xacro" />
+  <xacro:chessboard name="arm_right_chessboard" target_model="talos" target_link="arm_right_7_link" pose="0.15 0.1 -0.22 0.0 0.0 -1.57"/>
+</robot>
+
