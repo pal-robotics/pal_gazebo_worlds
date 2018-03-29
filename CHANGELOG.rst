@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add-chessboard' into 'erbium-devel'
+  Add chessboard using gazebo_attachment plugin
+  See merge request common/pal_gazebo_worlds!1
+* Add chessboard using gazebo_attachment plugin
+* Contributors: Victor Lopez
+
 2.0.0 (2018-02-05)
 ------------------
 * Fix missing exec dependency
