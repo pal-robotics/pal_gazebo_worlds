@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Install urdf directory
+* Contributors: Victor Lopez
+
 2.0.1 (2018-03-29)
 ------------------
 * Merge branch 'add-chessboard' into 'erbium-devel'
