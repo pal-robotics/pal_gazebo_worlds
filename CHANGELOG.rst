@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update chessboard model
+* Contributors: Victor Lopez
+
 2.0.2 (2018-03-29)
 ------------------
 * Install urdf directory
