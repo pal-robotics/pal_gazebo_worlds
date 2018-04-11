@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Install meshes directory
+* Contributors: Victor Lopez
+
 2.0.3 (2018-04-10)
 ------------------
 * Update chessboard model
