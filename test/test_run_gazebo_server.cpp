@@ -11,7 +11,7 @@ TEST(TestServer, test) {
 
   gazebo_msgs::LinkStatesConstPtr msg =
       ros::topic::waitForMessage<gazebo_msgs::LinkStates>(
-          "/gazebo/link_states", nh, ros::Duration(0.1));
+          "/gazebo/link_states", nh, ros::Duration(10.0));
 
   ASSERT_TRUE(msg.get());
 }
