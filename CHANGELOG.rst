@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Increase wait for message timeout
+* Contributors: Victor Lopez
+
 2.0.4 (2018-04-11)
 ------------------
 * Install meshes directory
