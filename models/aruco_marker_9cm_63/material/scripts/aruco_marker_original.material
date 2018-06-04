@@ -1,0 +1,14 @@
+material Aruco/aruco_marker_9cm_63
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Aruco_9cm_63.png
+			}
+		}
+	}
+}
+
