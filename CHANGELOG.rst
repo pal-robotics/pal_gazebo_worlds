@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.6 (2018-06-05)
+------------------
 * Merge branch 'talos-gazebo-worlds' into 'erbium-devel'
   Move TALOS worlds to pal_gazebo_worlds
   See merge request common/pal_gazebo_worlds!2
