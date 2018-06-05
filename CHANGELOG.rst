@@ -2,6 +2,18 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'talos-gazebo-worlds' into 'erbium-devel'
+  Move TALOS worlds to pal_gazebo_worlds
+  See merge request common/pal_gazebo_worlds!2
+* Merge branch 'better-stamping-world' into 'erbium-devel'
+  Add more markers and improve pal_gazebo_worlds
+  See merge request common/pal_gazebo_worlds!3
+* Move TALOS worlds to pal_gazebo_worlds
+* Add more markers and improve pal_gazebo_worlds
+* Contributors: Victor Lopez
+
 2.0.5 (2018-06-01)
 ------------------
 * Increase wait for message timeout
