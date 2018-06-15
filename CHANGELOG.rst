@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.7 (2018-06-15)
+------------------
 * Add recording argument
 * Merge branch 'pg_demo' into 'erbium-devel'
   Add box and world for pg_demo
