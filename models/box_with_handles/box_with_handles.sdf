@@ -1,0 +1,284 @@
+<sdf version='1.3'>
+<model name='box_with_handles'>
+      <static>1</static>
+      <link name='box_with_handles'>
+        <inertial>
+          <pose>0.0 0.0 0.2 0.0 0.0 0.0</pose>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+          <mass>2.0</mass>
+        </inertial>
+        <collision name='box'>
+          <pose>0.0 0.0 0.2 0.0 0.0 0.0</pose>
+          <geometry>
+            <box>
+              <size>0.4 0.4 0.4</size>
+            </box>
+          </geometry>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual1'>
+          <pose>0.0 0.0 0.2 0.0 0.0 0.0</pose>
+          <geometry>
+            <box>
+              <size>0.4 0.4 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='handle_left_1'>
+          <pose>0.1 0.18 0.44 0.0 0.0 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.08</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='handle_left_1'>
+          <pose>0.1 0.18 0.44 0.0 0.0 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.08</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='handle_left_2'>
+          <pose>-0.1 0.18 0.44 0.0 0.0 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.08</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='handle_left_2'>
+          <pose>-0.1 0.18 0.44 0.0 0.0 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.08</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='handle_left_3'>
+          <pose>0.0 0.18 0.48 0.0 1.57 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.25</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='handle_left_3'>
+          <pose>0.0 0.18 0.48 0.0 1.57 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.25</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='handle_left_1'>
+          <pose>0.1 -0.18 0.44 0.0 0.0 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.08</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='handle_right_1'>
+          <pose>0.1 -0.18 0.44 0.0 0.0 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.08</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='handle_right_2'>
+          <pose>-0.1 -0.18 0.44 0.0 0.0 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.08</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='handle_right_2'>
+          <pose>-0.1 -0.18 0.44 0.0 0.0 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.08</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='handle_right_3'>
+          <pose>0.0 -0.18 0.48 0.0 1.57 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.25</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='handle_right_3'>
+          <pose>0.0 -0.18 0.48 0.0 1.57 0.0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.25</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='visual2'>
+          <pose>0.0 0.0 0.4005 0.0 0.0 0.0</pose>
+          <geometry>
+            <box>
+              <size>0.12 0.12 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <visual name="visual3">
+          <pose>0.0 0.0 0.401 0.0 0.0 1.57</pose>
+          <geometry>
+            <box>
+              <size>0.105 0.105 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://box_with_handles/material/scripts</uri>
+              <uri>model://box_with_handles/material/textures</uri>
+              <name>Aruco/aruco_marker_original_582</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+</sdf>
