@@ -2,6 +2,16 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add recording argument
+* Merge branch 'pg_demo' into 'erbium-devel'
+  Add box and world for pg_demo
+  See merge request common/pal_gazebo_worlds!4
+* Add box and world for pg_demo
+* Use a single table in stamping demo world
+* Contributors: Adria Roig, Victor Lopez
+
 2.0.6 (2018-06-05)
 ------------------
 * Merge branch 'talos-gazebo-worlds' into 'erbium-devel'
