@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add models from tiago_gazebo
+* Contributors: Victor Lopez
+
 2.0.7 (2018-06-15)
 ------------------
 * Add recording argument
