@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.8 (2018-06-22)
+------------------
 * Add models from tiago_gazebo
 * Contributors: Victor Lopez
 
