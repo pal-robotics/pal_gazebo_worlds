@@ -15,10 +15,10 @@
           <mass>2.0</mass>
         </inertial>
         <collision name='box'>
-          <pose>0.0 0.0 0.2 0.0 0.0 0.0</pose>
+          <pose>0.0 0.0 0.25 0.0 0.0 0.0</pose>
           <geometry>
             <box>
-              <size>0.4 0.4 0.4</size>
+              <size>0.3 0.4 0.5</size>
             </box>
           </geometry>
           <surface>
@@ -32,10 +32,10 @@
           </surface>
         </collision>
         <visual name='visual1'>
-          <pose>0.0 0.0 0.2 0.0 0.0 0.0</pose>
+          <pose>0.0 0.0 0.25 0.0 0.0 0.0</pose>
           <geometry>
             <box>
-              <size>0.4 0.4 0.4</size>
+              <size>0.3 0.4 0.5</size>
             </box>
           </geometry>
           <material>
@@ -46,7 +46,7 @@
           </material>
         </visual>
         <collision name='handle_left_1'>
-          <pose>0.1 0.18 0.44 0.0 0.0 0.0</pose>
+          <pose>0.1 0.18 0.54 0.0 0.0 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -64,7 +64,7 @@
           </surface>
         </collision>
         <visual name='handle_left_1'>
-          <pose>0.1 0.18 0.44 0.0 0.0 0.0</pose>
+          <pose>0.1 0.18 0.54 0.0 0.0 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -79,7 +79,7 @@
           </material>
         </visual>
         <collision name='handle_left_2'>
-          <pose>-0.1 0.18 0.44 0.0 0.0 0.0</pose>
+          <pose>-0.1 0.18 0.54 0.0 0.0 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -97,7 +97,7 @@
           </surface>
         </collision>
         <visual name='handle_left_2'>
-          <pose>-0.1 0.18 0.44 0.0 0.0 0.0</pose>
+          <pose>-0.1 0.18 0.54 0.0 0.0 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -112,7 +112,7 @@
           </material>
         </visual>
         <collision name='handle_left_3'>
-          <pose>0.0 0.18 0.48 0.0 1.57 0.0</pose>
+          <pose>0.0 0.18 0.58 0.0 1.57 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -130,7 +130,7 @@
           </surface>
         </collision>
         <visual name='handle_left_3'>
-          <pose>0.0 0.18 0.48 0.0 1.57 0.0</pose>
+          <pose>0.0 0.18 0.58 0.0 1.57 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -145,7 +145,7 @@
           </material>
         </visual>
         <collision name='handle_left_1'>
-          <pose>0.1 -0.18 0.44 0.0 0.0 0.0</pose>
+          <pose>0.1 -0.18 0.54 0.0 0.0 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -163,7 +163,7 @@
           </surface>
         </collision>
         <visual name='handle_right_1'>
-          <pose>0.1 -0.18 0.44 0.0 0.0 0.0</pose>
+          <pose>0.1 -0.18 0.54 0.0 0.0 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -178,7 +178,7 @@
           </material>
         </visual>
         <collision name='handle_right_2'>
-          <pose>-0.1 -0.18 0.44 0.0 0.0 0.0</pose>
+          <pose>-0.1 -0.18 0.54 0.0 0.0 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -196,7 +196,7 @@
           </surface>
         </collision>
         <visual name='handle_right_2'>
-          <pose>-0.1 -0.18 0.44 0.0 0.0 0.0</pose>
+          <pose>-0.1 -0.18 0.54 0.0 0.0 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -211,7 +211,7 @@
           </material>
         </visual>
         <collision name='handle_right_3'>
-          <pose>0.0 -0.18 0.48 0.0 1.57 0.0</pose>
+          <pose>0.0 -0.18 0.58 0.0 1.57 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -229,7 +229,7 @@
           </surface>
         </collision>
         <visual name='handle_right_3'>
-          <pose>0.0 -0.18 0.48 0.0 1.57 0.0</pose>
+          <pose>0.0 -0.18 0.58 0.0 1.57 0.0</pose>
           <geometry>
             <cylinder>
               <radius>0.01</radius>
@@ -244,7 +244,7 @@
           </material>
         </visual>
         <visual name='visual2'>
-          <pose>0.0 0.0 0.4005 0.0 0.0 0.0</pose>
+          <pose>0.0 0.0 0.5005 0.0 0.0 0.0</pose>
           <geometry>
             <box>
               <size>0.12 0.12 0.001</size>
@@ -258,7 +258,7 @@
           </material>
         </visual>
         <visual name="visual3">
-          <pose>0.0 0.0 0.401 0.0 0.0 1.57</pose>
+          <pose>0.0 0.0 0.501 0.0 0.0 1.57</pose>
           <geometry>
             <box>
               <size>0.105 0.105 0.001</size>
