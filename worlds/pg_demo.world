@@ -40,7 +40,7 @@
     <!-- staircase generated with steps_gazebo -->
     <include>
       <uri>model://box_with_handles</uri>
-      <pose>0.3 0.0 0.0 0 0 0</pose>
+      <pose>0.4 0.0 0.0 0 0 0</pose>
       <static>false</static>
     </include>
 
