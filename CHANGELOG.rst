@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.9 (2018-07-10)
+------------------
 * Merge branch 'reemc_demos' into 'erbium-devel'
   Add aruco world for testing
   See merge request common/pal_gazebo_worlds!6
