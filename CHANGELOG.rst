@@ -2,6 +2,18 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'reemc_demos' into 'erbium-devel'
+  Add aruco world for testing
+  See merge request common/pal_gazebo_worlds!6
+* Add aruco world for testing
+* Merge branch 'p_g_demos' into 'erbium-devel'
+  Modified p&g world and model. Added socms world
+  See merge request common/pal_gazebo_worlds!5
+* Modified p&g world and model. Added socms world
+* Contributors: Adrià Roig, Jordan Palacios, Victor Lopez
+
 2.0.8 (2018-06-22)
 ------------------
 * Add models from tiago_gazebo
