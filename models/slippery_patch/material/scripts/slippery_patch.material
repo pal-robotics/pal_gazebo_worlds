@@ -1,0 +1,14 @@
+material Custom/slippery_patch
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture slippery_patch.jpg
+			}
+		}
+	}
+}
+

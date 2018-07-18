@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <model name='slippery_patch'>
+      <link name="link">
+      <gravity>false</gravity>
+        <inertial>
+          <mass>0.4</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.0001</size> <!-- Poster dimensions: thickness width length -->
+            </box>
+          </geometry>
+      <surface>
+          <friction>
+            <ode>
+              <mu>0.00</mu>
+              <mu2>0.00</mu2>
+            </ode>
+          </friction>
+      </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.0001</size> <!-- Poster dimensions: thickness width length -->
+            </box>
+          </geometry>
+          <material>
+            <script>
+	      <uri>model://slippery_patch/material/scripts</uri>
+	      <uri>model://slippery_patch/material/textures</uri>
+              <name>Custom/slippery_patch</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    <static>1</static>
+    </model>
+</sdf>
+
