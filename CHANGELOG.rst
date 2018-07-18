@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add slippery patch
+* Contributors: Victor Lopez
+
 2.0.9 (2018-07-10)
 ------------------
 * Merge branch 'reemc_demos' into 'erbium-devel'
