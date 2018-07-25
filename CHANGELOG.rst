@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'extend-tests' into 'erbium-devel'
+  Narrow corridors worlds
+  See merge request common/pal_gazebo_worlds!7
+* Added narrow corridor worlds
+* Contributors: Jordan Palacios, Victor Lopez
+
 2.0.10 (2018-07-18)
 -------------------
 * Add slippery patch
