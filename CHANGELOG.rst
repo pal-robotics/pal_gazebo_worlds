@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.12 (2018-07-27)
+-------------------
 * Merge branch 'wbc_grasp_demo' into 'erbium-devel'
   Wbc grasp demo
   See merge request common/pal_gazebo_worlds!8
