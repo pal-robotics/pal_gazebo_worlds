@@ -2,6 +2,15 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'wbc_grasp_demo' into 'erbium-devel'
+  Wbc grasp demo
+  See merge request common/pal_gazebo_worlds!8
+* Modified pick and place world
+* New world for wbc grasp demo
+* Contributors: Adrià Roig, Victor Lopez
+
 2.0.11 (2018-07-25)
 -------------------
 * Merge branch 'extend-tests' into 'erbium-devel'
