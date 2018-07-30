@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.13 (2018-07-30)
+-------------------
 * Merge branch 'passages_tests' into 'erbium-devel'
   Narrow passages tests
   See merge request common/pal_gazebo_worlds!9
