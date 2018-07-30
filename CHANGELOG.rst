@@ -2,6 +2,15 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'passages_tests' into 'erbium-devel'
+  Narrow passages tests
+  See merge request common/pal_gazebo_worlds!9
+* Added world with 110cm passage
+* Added world with 60cm passage
+* Contributors: Jordan Palacios
+
 2.0.12 (2018-07-27)
 -------------------
 * Merge branch 'wbc_grasp_demo' into 'erbium-devel'
