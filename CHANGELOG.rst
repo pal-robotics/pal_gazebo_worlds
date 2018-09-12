@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'wbc_grasp_demo' into 'erbium-devel'
+  Modified wbc_grasp_demo world
+  See merge request common/pal_gazebo_worlds!10
+* Modified wbc_grasp_demo world
+* Contributors: Adrià Roig, Victor Lopez
+
 2.0.13 (2018-07-30)
 -------------------
 * Merge branch 'passages_tests' into 'erbium-devel'
