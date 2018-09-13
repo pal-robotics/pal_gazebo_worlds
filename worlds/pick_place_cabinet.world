@@ -31,27 +31,33 @@
     </include>
 
     <include>
-      <uri>model://macrolink_table</uri>
-      <pose>1.7 0.5 0 0 0 0</pose>
+      <uri>model://reemc_cabinet</uri>
+      <pose>0.9 0.24 0 0 0 0</pose>
     </include>
     <include>
       <uri>model://aruco_marker_9cm_582</uri>
-      <pose>1.5 0.62 0.75 0 0 -3.14</pose>
+      <pose>0.7 0.12 0.52 0 0 -3.14</pose>
       <static>1</static>
+    </include>
+    <include>
+      <uri>model://pringles2</uri>
+      <pose>0.8 0.11 .51 0 0 0</pose>
+      <static>0</static>
+    </include>
+
+
+    <include>
+      <uri>model://reemc_bookshelf</uri>
+      <pose>1.1 -0.46 0 0 0 -1.57</pose>
     </include>
     <include>
       <uri>model://aruco_marker_9cm_26</uri>
-      <pose>1.5 0.38 0.75 0 0 -3.14</pose>
+      <pose>0.74 -0.18 0.82 0 0 -3.14</pose>
       <static>1</static>
     </include>
     <include>
-      <uri>model://aruco_marker_9cm_63</uri>
-      <pose>1.7 0.5 0.9 1.57 0 -1.57</pose>
-      <static>1</static>
-    </include>
-    <include>
-      <uri>model://coke_can_slim</uri>
-      <pose>1.57 0.38 0.8 0 0 -1.57</pose>
+      <uri>model://pringles</uri>
+      <pose>0.853 -0.18 0.93 0 0 0</pose>
       <static>0</static>
     </include>
   </world>
