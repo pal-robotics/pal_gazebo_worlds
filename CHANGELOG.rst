@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix-aruco-orientation' into 'erbium-devel'
+  Fix aruco marker orientation, so gazebo frame matches aruco orientation
+  See merge request common/pal_gazebo_worlds!11
+* Fix aruco marker orientation, so gazebo frame matches aruco orientation
+* Contributors: Victor Lopez
+
 2.0.14 (2018-09-12)
 -------------------
 * Merge branch 'wbc_grasp_demo' into 'erbium-devel'
