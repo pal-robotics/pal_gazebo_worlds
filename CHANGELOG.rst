@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.16 (2018-09-14)
+-------------------
 * Merge branch 'new-70cm-worlds' into 'erbium-devel'
   added 70 passage and corridor worlds
   See merge request common/pal_gazebo_worlds!12
