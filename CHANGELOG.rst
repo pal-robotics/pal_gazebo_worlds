@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'new-70cm-worlds' into 'erbium-devel'
+  added 70 passage and corridor worlds
+  See merge request common/pal_gazebo_worlds!12
+* added 70 passage and corridor worlds
+* Contributors: Jordan Palacios, Procópio Stein
+
 2.0.15 (2018-09-13)
 -------------------
 * Merge branch 'fix-aruco-orientation' into 'erbium-devel'
