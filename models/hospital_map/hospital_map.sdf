@@ -1,0 +1,460 @@
+<sdf version="1.4">
+  <property name="map_z"     value="20.5"/>
+      <model name='hospital_map'>
+        <static>1</static>
+        <link name='link'>
+          <collision name='colision1'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/hospital_map.stl</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <bounce/>
+              <friction>
+                <ode/>
+                <torsional>
+                  <ode/>
+                </torsional>
+              </friction>
+              <contact>
+                <ode/>
+              </contact>
+            </surface>
+            <max_contacts>10</max_contacts>
+          </collision>
+          <visual name='visual_Floor_1'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/g1.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/White</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_1'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/w1.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Floor_Ramp_1'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/gr1.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Orange</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_Ramp_1'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/wr1.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+
+          <visual name='visual_Floor_2'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/g2.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/White</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_2'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/w2.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Floor_Ramp_2'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/gr2.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Orange</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_Ramp_2'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/wr2.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+
+          <visual name='visual_Floor_3'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/g3.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/White</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_3'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/w3.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Floor_Ramp_3'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/gr3.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Orange</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_Ramp_3'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/wr3.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+
+          <visual name='visual_Floor_4'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/g4.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/White</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_4'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/w4.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Floor_Ramp_4'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/gr4.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Orange</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_Ramp_4'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/wr1.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+
+          <visual name='visual_Floor_5'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/g5.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/White</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_5'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/w5.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Floor_Ramp_5'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/gr5.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Orange</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_Ramp_5'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/wr5.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+
+          <visual name='visual_Floor_6'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/g6.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/White</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_6'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/w6.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Floor_Ramp_6'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/gr6.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Orange</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_Ramp_6'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/wr6.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+
+          <visual name='visual_Floor_7'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/g7.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/White</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='visual_Wall_7'>
+            <pose frame=''>0 0 ${map_z} 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://hospital_map/meshes/w7.stl</uri>
+                <scale>0.1 0.1 0.1</scale>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/PaintedWall</name>
+              </script>
+            </material>
+          </visual>
+
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0</angular>
+          </velocity_decay>
+          <self_collide>0</self_collide>
+          <kinematic>0</kinematic>
+          <gravity>1</gravity>
+        </link>
+        <pose frame=''>0.554544 -0.556992 0 0 -0 0</pose>
+      </model>
+      <state world_name='default'>
+        <sim_time>0 0</sim_time>
+        <real_time>0 0</real_time>
+        <wall_time>1520529835 192042423</wall_time>
+        <iterations>0</iterations>
+        <model name='ground_plane'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose frame=''>0 0 0 0 -0 0</pose>
+            <velocity>0 0 0 0 -0 0</velocity>
+            <acceleration>0 0 0 0 -0 0</acceleration>
+            <wrench>0 0 0 0 -0 0</wrench>
+          </link>
+        </model>
+        <model name='hospital_map'>
+          <pose frame=''>0 0 0 0 0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose frame=''>0 0 2.05 0 0 0</pose>
+            <velocity>0 0 0 0 0 0</velocity>
+            <acceleration>0 0 2.05 0 0 0</acceleration>
+            <wrench>0 0 0 0 0 0</wrench>
+          </link>
+        </model>
+</sdf>
