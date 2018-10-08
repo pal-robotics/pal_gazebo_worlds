@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'change-corridors' into 'erbium-devel'
+  shorter corridor
+  See merge request common/pal_gazebo_worlds!14
+* shorter corridor
+* Contributors: Jordan Palacios, Procópio Stein
+
 2.0.16 (2018-09-14)
 -------------------
 * Merge branch 'new-70cm-worlds' into 'erbium-devel'
