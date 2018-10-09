@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.18 (2018-10-09)
+-------------------
 * Merge branch 'arese-triangle' into 'erbium-devel'
   Arese triangle
   See merge request common/pal_gazebo_worlds!13
