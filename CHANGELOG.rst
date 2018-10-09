@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'arese-triangle' into 'erbium-devel'
+  Arese triangle
+  See merge request common/pal_gazebo_worlds!13
+* added hospital world and model
+* Contributors: Procópio Stein
+
 2.0.17 (2018-10-08)
 -------------------
 * Merge branch 'change-corridors' into 'erbium-devel'
