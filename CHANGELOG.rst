@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.19 (2018-10-18)
+-------------------
 * Merge branch 'grasping_demo_worlds' into 'erbium-devel'
   Add new world
   See merge request common/pal_gazebo_worlds!15
