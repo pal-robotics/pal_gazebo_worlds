@@ -32,26 +32,21 @@
 
     <include>
       <uri>model://macrolink_table</uri>
-      <pose>1.7 0.5 0 0 0 0</pose>
+      <pose>0.8 0.0 0 0 0 0</pose>
     </include>
     <include>
       <uri>model://aruco_marker_9cm_582</uri>
-      <pose>1.5 0.62 0.75 0 0 -3.14</pose>
+      <pose>0.6 0.12 0.75 0 0 -3.14</pose>
       <static>1</static>
     </include>
     <include>
       <uri>model://aruco_marker_9cm_26</uri>
-      <pose>1.5 0.38 0.75 0 0 -3.14</pose>
-      <static>1</static>
-    </include>
-    <include>
-      <uri>model://aruco_marker_9cm_63</uri>
-      <pose>1.7 0.5 1.4 1.57 0 -1.57</pose>
+      <pose>0.6 -0.12 0.75 0 0 -3.14</pose>
       <static>1</static>
     </include>
     <include>
       <uri>model://coke_can_slim</uri>
-      <pose>1.57 0.38 0.8 0 0 -1.57</pose>
+      <pose>0.67 -0.12 0.8 0 0 -1.57</pose>
       <static>0</static>
     </include>
   </world>
