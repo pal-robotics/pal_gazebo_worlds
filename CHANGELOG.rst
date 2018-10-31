@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.20 (2018-10-31)
+-------------------
 * Merge branch 'dock_world' into 'erbium-devel'
   add worlds dock_station & dock_and_aruco
   See merge request common/pal_gazebo_worlds!16
