@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'dock_world' into 'erbium-devel'
+  add worlds dock_station & dock_and_aruco
+  See merge request common/pal_gazebo_worlds!16
+* add worlds dock_station & dock_and_aruco
+* Contributors: Jeremie deray, Victor Lopez
+
 2.0.19 (2018-10-18)
 -------------------
 * Merge branch 'grasping_demo_worlds' into 'erbium-devel'
