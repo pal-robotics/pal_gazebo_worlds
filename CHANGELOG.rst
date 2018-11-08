@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.21 (2018-11-08)
+-------------------
 * Add pal_play_gazebo script
 * Contributors: Victor Lopez
 
