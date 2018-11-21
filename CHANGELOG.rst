@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.22 (2018-11-21)
+-------------------
 * Merge branch 'pick-place-in-office' into 'erbium-devel'
   Pick place in office
   See merge request common/pal_gazebo_worlds!17
