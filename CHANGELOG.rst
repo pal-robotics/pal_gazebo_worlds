@@ -2,6 +2,15 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'pick-place-in-office' into 'erbium-devel'
+  Pick place in office
+  See merge request common/pal_gazebo_worlds!17
+* Add walls to pick_place_close_demo
+* Fix collision model of macrolink table
+* Contributors: Victor Lopez
+
 2.0.21 (2018-11-08)
 -------------------
 * Add pal_play_gazebo script
