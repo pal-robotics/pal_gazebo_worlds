@@ -8,8 +8,8 @@
   <arg name="extra_gz_model_path" default=""/>
   <arg name="extra_gz_resource_path" default=""/>
 
-  <env name="GAZEBO_MODEL_PATH" value="$(arg extra_gz_model_path):$(find pal_gazebo_worlds)/models:$(optenv GAZEBO_MODEL_PATH)"/>
-  <env name="GAZEBO_RESOURCE_PATH" value="$(arg extra_gz_resource_path):$(find pal_gazebo_worlds):$(optenv GAZEBO_RESOURCE_PATH)"/>
+  <env name="GAZEBO_MODEL_PATH" value="$(arg extra_gz_model_path):$(find pal_gazebo_worlds)/../pal_gazebo_worlds_private/models:$(find pal_gazebo_worlds)/models:$(optenv GAZEBO_MODEL_PATH)"/>
+  <env name="GAZEBO_RESOURCE_PATH" value="$(arg extra_gz_resource_path):$(find pal_gazebo_worlds)/../pal_gazebo_worlds_private:$(find pal_gazebo_worlds):$(optenv GAZEBO_RESOURCE_PATH)"/>
 
   <!-- start up world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
