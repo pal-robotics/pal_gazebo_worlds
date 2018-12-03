@@ -2,6 +2,15 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add-private-worlds-hack' into 'erbium-devel'
+  Add hack to find worlds  in pal_gazebo_worlds_private
+  See merge request common/pal_gazebo_worlds!19
+* Add hack to find worlds  in pal_gazebo_worlds_private
+  Even if the package is not present
+* Contributors: Victor Lopez
+
 2.0.22 (2018-11-21)
 -------------------
 * Merge branch 'pick-place-in-office' into 'erbium-devel'
