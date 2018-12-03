@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.23 (2018-12-03)
+-------------------
 * Merge branch 'add-private-worlds-hack' into 'erbium-devel'
   Add hack to find worlds  in pal_gazebo_worlds_private
   See merge request common/pal_gazebo_worlds!19
