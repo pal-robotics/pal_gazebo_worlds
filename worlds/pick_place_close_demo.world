@@ -22,7 +22,7 @@
 
     <!-- A global light source -->
     <include>
-      <uri>model://sun</uri>
+      <uri>model://ideal_sun</uri>
     </include>
 
     <!-- A ground plane -->
