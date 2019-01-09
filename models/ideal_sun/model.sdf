@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <!-- Light Source -->
+  <light type="directional" name="ideal_sun">
+    <!-- cast_shadows false or 0 is ignored, at least with directional light -->
+    <cast_shadows>true</cast_shadows>
+    <pose>0 0 10 0 0 0</pose>
+    <diffuse>0.8 0.8 0.8 1</diffuse>
+    <specular>0.2 0.2 0.2 1</specular>
+    <attenuation>
+      <range>1000</range>
+      <constant>0.9</constant>
+      <linear>0.01</linear>
+      <quadratic>0.001</quadratic>
+    </attenuation>
+    <!-- Direction cannot have any 0 component-->
+    <direction>-0.001 0.001 -0.9</direction>
+  </light>
+</sdf>
