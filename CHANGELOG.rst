@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'ideal-sun' into 'erbium-devel'
+  Add ideal sun to pick_place_close_demo world
+  See merge request common/pal_gazebo_worlds!20
+* Add ideal sun to pick_place_close_demo world
+* Contributors: Victor Lopez
+
 2.0.23 (2018-12-03)
 -------------------
 * Merge branch 'add-private-worlds-hack' into 'erbium-devel'
