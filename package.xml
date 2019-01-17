@@ -4,7 +4,7 @@
   <version>2.0.24</version>
   <description>Simulation worlds for PAL robots.</description>
   <maintainer email="victor.lopez@pal-robotics.com">Victor Lopez</maintainer>
-  <license>Proprietary</license>
+  <license>LGPL-3.0</license>
   <author email="victor.lopez@pal-robotics.com">Victor Lopez</author>
 
   <buildtool_depend>catkin</buildtool_depend>
