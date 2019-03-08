@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.25 (2019-03-08)
+-------------------
 * Move pick demo table further away
 * Change license to LGPL-3.0
 * Contributors: Victor Lopez
