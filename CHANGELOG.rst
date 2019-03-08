@@ -2,6 +2,12 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Move pick demo table further away
+* Change license to LGPL-3.0
+* Contributors: Victor Lopez
+
 2.0.24 (2019-01-09)
 -------------------
 * Merge branch 'ideal-sun' into 'erbium-devel'
