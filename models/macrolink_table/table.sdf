@@ -3,10 +3,10 @@
       <static>1</static>
       <link name='link'>
         <collision name='surface'>
-          <pose>0.000000 0.000000 0.7250000 0.000000 0.000000 0.000000</pose>
+          <pose>0.000000 0.000000 0.7200000 0.000000 0.000000 0.000000</pose>
           <geometry>
             <box>
-              <size>0.750000 0.750000 0.050000</size>
+              <size>0.750000 0.750000 0.040000</size>
             </box>
           </geometry>
           <surface>
