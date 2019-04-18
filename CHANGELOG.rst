@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.26 (2019-04-18)
+-------------------
 * Merge branch 'better-table' into 'erbium-devel'
   Fix collision model of table
   See merge request common/pal_gazebo_worlds!21
