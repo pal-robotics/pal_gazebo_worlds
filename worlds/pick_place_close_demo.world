@@ -222,17 +222,17 @@
     </include>
     <include>
       <uri>model://aruco_marker_9cm_582</uri>
-      <pose>0.7 0.12 0.75 0 0 -3.14</pose>
+      <pose>0.7 0.12 0.74 0 0 -3.14</pose>
       <static>1</static>
     </include>
     <include>
       <uri>model://aruco_marker_9cm_26</uri>
-      <pose>0.7 -0.12 0.75 0 0 -3.14</pose>
+      <pose>0.7 -0.12 0.74 0 0 -3.14</pose>
       <static>1</static>
     </include>
     <include>
       <uri>model://coke_can_slim</uri>
-      <pose>0.77 -0.12 0.8 0 0 -1.57</pose>
+      <pose>0.77 -0.12 0.75 0 0 -1.57</pose>
       <static>0</static>
     </include>
   </world>
