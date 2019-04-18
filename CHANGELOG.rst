@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'better-table' into 'erbium-devel'
+  Fix collision model of table
+  See merge request common/pal_gazebo_worlds!21
+* Fix collision model of table
+* Contributors: Victor Lopez
+
 2.0.25 (2019-03-08)
 -------------------
 * Move pick demo table further away
