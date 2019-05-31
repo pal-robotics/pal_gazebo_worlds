@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.27 (2019-05-31)
+-------------------
 * Merge branch 'home_world' into 'erbium-devel'
   added new gazebo home world
   See merge request common/pal_gazebo_worlds!22
