@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'home_world' into 'erbium-devel'
+  added new gazebo home world
+  See merge request common/pal_gazebo_worlds!22
+* added new gazebo home world
+* Contributors: Sai Kishor Kothakota, Victor Lopez
+
 2.0.26 (2019-04-18)
 -------------------
 * Merge branch 'better-table' into 'erbium-devel'
