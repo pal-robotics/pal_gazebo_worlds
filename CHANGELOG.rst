@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.28 (2019-06-04)
+-------------------
 * Merge branch 'tiago_dual_calib' into 'erbium-devel'
   Add lower_sun_empty world for calibration tests
   See merge request common/pal_gazebo_worlds!23
