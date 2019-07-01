@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'simple_sim' into 'erbium-devel'
+  Add increase Gazebo real time factor node
+  See merge request common/pal_gazebo_worlds!24
+* Add increase Gazebo real time factor node
+* Contributors: Adria Roig, Victor Lopez
+
 2.0.28 (2019-06-04)
 -------------------
 * Merge branch 'tiago_dual_calib' into 'erbium-devel'
