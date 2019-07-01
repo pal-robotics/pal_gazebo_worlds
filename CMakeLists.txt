@@ -1,9 +1,24 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(pal_gazebo_worlds)
 
-find_package(catkin REQUIRED)
+SET(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS}")
 
-catkin_package()
+find_package(catkin REQUIRED COMPONENTS
+    roscpp
+    gazebo_msgs)
+
+catkin_package(
+    CATKIN_DEPENDS gazebo_msgs
+    )
+
+include_directories(SYSTEM ${catkin_INCLUDE_DIRS})
+
+add_executable(increase_real_time_factor src/increase_real_time_factor.cpp)
+target_link_libraries(increase_real_time_factor ${catkin_LIBRARIES})
+
+install(TARGETS increase_real_time_factor
+    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 foreach(dir launch models worlds urdf meshes)
     install(DIRECTORY ${dir}/

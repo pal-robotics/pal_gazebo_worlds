@@ -8,6 +8,8 @@
   <author email="victor.lopez@pal-robotics.com">Victor Lopez</author>
 
   <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>gazebo_msgs</depend>
   <exec_depend>gazebo_ros</exec_depend>
   <test_depend>roscpp</test_depend>
   <test_depend>rostest</test_depend>
