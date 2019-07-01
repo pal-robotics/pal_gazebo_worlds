@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.29 (2019-07-01)
+-------------------
 * Merge branch 'simple_sim' into 'erbium-devel'
   Add increase Gazebo real time factor node
   See merge request common/pal_gazebo_worlds!24
