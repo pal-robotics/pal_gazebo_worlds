@@ -1,0 +1,221 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="narrow_passage">
+    <physics type="ode">
+      <gravity>0 0 -9.81</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>20</iters>
+          <sor>1.0</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100.0</contact_max_correcting_vel>
+          <contact_surface_layer>0.0</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="wall_1_model">
+      <pose>-2 -6.5 1 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_1_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.2 14.2 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.2 14.2 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_2_model">
+      <pose>2.3 -6.5 1 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_2_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.2 14 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.2 14 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_3_model">
+      <pose>0.25 0.5 1 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_3_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>4.3 0.2 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>4.3 0.2 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_4_model">
+      <pose>0.25 -13.5 1 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_4_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>4.3 0.2 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>4.3 0.2 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="box">
+      <pose>-1.55 0.05 1.05 0 0 0</pose>
+      <static>true</static>
+      <link name="box_link">
+      <visual name="box_visual">
+        <geometry>
+          <box>
+              <size>0.4 0.4 2.0</size>
+          </box>
+        </geometry>
+      </visual>
+      <collision name="box_collision">
+        <geometry>
+          <box>
+            <size>0.4 0.4 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+      </link>
+    </model>
+    <include>
+      <uri>model://dining_chair</uri>
+      <pose>-1.5 -13 0.01 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://shelves</uri>
+      <pose>1.54 -12.85 0.01 0 0 0</pose>
+    </include>
+    <model name="column">
+      <pose>-1.5 -8.5 1 0 0 0</pose>
+      <static>true</static>
+      <link name="column_link">
+      <visual name="column_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.38</radius>
+            <length>2.0</length>
+          </cylinder>
+        </geometry>
+      </visual>
+      <collision name="column_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.38</radius>
+            <length>2.0</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      </link>
+    </model>
+    <include>
+      <name>female03</name>
+      <uri>model://citizen_extras_female_03</uri>
+      <pose>1.9 -9.1 0.01 0.0 0.0 -1.79</pose>
+    </include>
+    <!-- Change the gazebo camera point of view -->
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <pose>0 -6 16.0 0.0 1.57 -3.14159</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>
+
