@@ -2,6 +2,18 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'place_obj' into 'erbium-devel'
+  Add green rectangle model as a place object
+  See merge request common/pal_gazebo_worlds!25
+* Merge branch 'add-narrow-passage-world' into 'erbium-devel'
+  add narrow_passage world
+  See merge request common/pal_gazebo_worlds!26
+* add narrow_passage world
+* Add green rectangle model as a place object
+* Contributors: Adria Roig, Jordi Pages, Victor Lopez
+
 2.0.29 (2019-07-01)
 -------------------
 * Merge branch 'simple_sim' into 'erbium-devel'
