@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.30 (2019-07-29)
+-------------------
 * Merge branch 'place_obj' into 'erbium-devel'
   Add green rectangle model as a place object
   See merge request common/pal_gazebo_worlds!25
