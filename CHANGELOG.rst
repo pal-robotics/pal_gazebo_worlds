@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Disallow auto disable for some items needed for tests
+* Contributors: Victor Lopez
+
 2.0.30 (2019-07-29)
 -------------------
 * Merge branch 'place_obj' into 'erbium-devel'
