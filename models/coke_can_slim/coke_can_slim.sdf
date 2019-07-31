@@ -1,6 +1,8 @@
 <?xml version="1.0" ?>
 <sdf version='1.4'>
-  <model name="coke_can_slim">      
+  <model name="coke_can_slim">
+    <!-- Without this, sometimes collisions are not reported-->
+      <allow_auto_disable>0</allow_auto_disable>
       <static>0</static>
       <link name='link'>
         <inertial>
@@ -52,7 +54,7 @@
         </velocity_decay>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>        
-      </link>   
+        <gravity>1</gravity>
+      </link>
   </model>
 </sdf>
