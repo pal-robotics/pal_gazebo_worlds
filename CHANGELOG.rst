@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.31 (2019-07-31)
+-------------------
 * Disallow auto disable for some items needed for tests
 * Contributors: Victor Lopez
 
