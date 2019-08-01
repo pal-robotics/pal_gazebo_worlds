@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'memmo' into 'erbium-devel'
+  added memmo world
+  See merge request common/pal_gazebo_worlds!27
+* added memmo world
+* Contributors: Hilario Tome
+
 2.0.31 (2019-07-31)
 -------------------
 * Disallow auto disable for some items needed for tests
