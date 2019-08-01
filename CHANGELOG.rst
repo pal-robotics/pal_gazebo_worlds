@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.32 (2019-08-01)
+-------------------
 * Merge branch 'memmo' into 'erbium-devel'
   added memmo world
   See merge request common/pal_gazebo_worlds!27
