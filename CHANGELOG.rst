@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.33 (2019-09-06)
+-------------------
 * Merge branch 'voronoi_world' into 'erbium-devel'
   Voronoi world
   See merge request common/pal_gazebo_worlds!29
