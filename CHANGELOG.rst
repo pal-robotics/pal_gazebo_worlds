@@ -2,6 +2,16 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'voronoi_world' into 'erbium-devel'
+  Voronoi world
+  See merge request common/pal_gazebo_worlds!29
+* Add voronoi_graph world to test grid alignment
+* Add small factory world
+* Add factroy world
+* Contributors: Adria Roig, Victor Lopez
+
 2.0.32 (2019-08-01)
 -------------------
 * Merge branch 'memmo' into 'erbium-devel'
