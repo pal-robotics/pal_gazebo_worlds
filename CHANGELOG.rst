@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.34 (2019-10-17)
+-------------------
 * Merge branch 'planner_chunk' into 'erbium-devel'
   added a new t_shaped world
   See merge request common/pal_gazebo_worlds!30
