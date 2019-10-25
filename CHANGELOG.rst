@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.35 (2019-10-25)
+-------------------
 * Merge branch 'dynamic-obstacles' into 'erbium-devel'
   added simple box model for dynamic obstacles integration test
   See merge request common/pal_gazebo_worlds!31
