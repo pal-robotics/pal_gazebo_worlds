@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'tutorials-worlds' into 'erbium-devel'
+  Gazebo worlds for ARI simulation
+  See merge request common/pal_gazebo_worlds!32
+* Gazebo worlds for ARI simulation
+* Contributors: Sara Cooper, Victor Lopez
+
 2.0.35 (2019-10-25)
 -------------------
 * Merge branch 'dynamic-obstacles' into 'erbium-devel'
