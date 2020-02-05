@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.36 (2020-02-05)
+-------------------
 * Merge branch 'tutorials-worlds' into 'erbium-devel'
   Gazebo worlds for ARI simulation
   See merge request common/pal_gazebo_worlds!32
