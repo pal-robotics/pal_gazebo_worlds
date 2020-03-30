@@ -51,7 +51,7 @@
     </include>
     <include>
       <uri>model://coke_can_slim</uri>
-      <pose>1.57 0.38 0.8 0 0 -1.57</pose>
+      <pose>1.57 0.38 0.815 0 0 -1.57</pose>
       <static>0</static>
     </include>
   </world>
