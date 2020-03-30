@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.37 (2020-03-30)
+-------------------
 * Merge branch 'world' into 'erbium-devel'
   Modify worlds for tests
   See merge request common/pal_gazebo_worlds!34
