@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'world' into 'erbium-devel'
+  Modify worlds for tests
+  See merge request common/pal_gazebo_worlds!34
+* Modify worlds for tests
+* Contributors: Adrià Roig, victor
+
 2.0.36 (2020-02-05)
 -------------------
 * Merge branch 'tutorials-worlds' into 'erbium-devel'
