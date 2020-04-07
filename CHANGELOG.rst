@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'swing_interp' into 'erbium-devel'
+  Add world for swing interpolator test
+  See merge request common/pal_gazebo_worlds!35
+* Add world for swing interpolator test
+* Contributors: Adrià Roig, victor
+
 2.0.37 (2020-03-30)
 -------------------
 * Merge branch 'world' into 'erbium-devel'
