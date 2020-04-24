@@ -85,7 +85,7 @@
           <material>
             <script>
               <uri>file://media/materials/scripts/kitchen.material</uri>
-              <name>Kitchen/WoodFloor</name>
+              <name>Kitchen/CounterTop</name>
             </script>
           </material>
         </visual>
