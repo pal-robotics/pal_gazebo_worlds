@@ -2,6 +2,13 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added calibration room
+* changing floor texture
+* added a new world based on small_office with wooden textured floor
+* Contributors: Procópio Stein, federiconardi, procopiostein
+
 2.0.38 (2020-04-07)
 -------------------
 * Merge branch 'swing_interp' into 'erbium-devel'
