@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.39 (2020-05-04)
+-------------------
 * added calibration room
 * changing floor texture
 * added a new world based on small_office with wooden textured floor
