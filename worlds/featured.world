@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="narrow_passage">
+    <physics type="ode">
+      <gravity>0 0 -9.81</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>20</iters>
+          <sor>1.0</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100.0</contact_max_correcting_vel>
+          <contact_surface_layer>0.0</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <model name="ground_plane">
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <static>1</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0.000000 0.000000 1.000000</normal>
+              <size>6.0000006.000000</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100.000000</mu>
+                <mu2>50.000000</mu2>
+              </ode>
+            </friction>
+            <bounce />
+            <contact>
+              <ode />
+            </contact>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0.000000 0.000000 1.000000</normal>
+              <size>6.000000 6.000000</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/kitchen.material</uri>
+              <name>Gazebo/Bricks</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+
+    <!-- wall 1 -->
+    <model name="wall_1_model">
+      <pose>-3 0 1 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_1_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.2 6 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.2 6 2</size>
+            </box>
+          </geometry>
+           <material>
+            <script>
+              <uri>file://media/materials/scripts/kitchen.material</uri>
+              <name>Kitchen/CounterTop</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+    <!-- wall 2 -->
+    <model name="wall_2_model">
+      <pose>3 0 1 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_2_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.2 6 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.2 6 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/kitchen.material</uri>
+              <name>Gazebo/WoodFloor</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+    
+    <!-- wall 3 -->
+    <model name="wall_3_model">
+      <pose>0 3 1 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_3_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>6 0.2 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>6 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/kitchen.material</uri>
+              <name>Gazebo/CeilingTiled</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+    
+    <!-- wall 4 -->
+    <model name="wall_4_model">
+      <pose>0 -3 1 0 0 0</pose>
+      <static>true</static>
+      <link name="wall_4_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>6 0.2 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>6 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/kitchen.material</uri>
+              <name>Gazebo/PaintedWall</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+    
+    <!-- box 1 -->
+    <model name="box_1">
+      <pose>-1.5 -0.1 1.05 0 0 0</pose>
+      <static>true</static>
+      <link name="box_link">
+      <visual name="box_visual">
+        <geometry>
+          <box>
+              <size>0.4 0.4 2.0</size>
+          </box>
+        </geometry>
+         <material>
+            <script>
+              <uri>file://media/materials/scripts/kitchen.material</uri>
+              <name>Gazebo/Trunk</name>
+            </script>
+          </material>
+      </visual>
+      <collision name="box_collision">
+        <geometry>
+          <box>
+            <size>0.4 0.4 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+      </link>
+    </model>
+    
+    
+    <!--
+    <include>
+      <uri>model://dining_chair</uri>
+      <pose>-1.5 -13 0.01 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://shelves</uri>
+      <pose>1.54 -12.85 0.01 0 0 0</pose>
+    </include>
+    -->
+    
+    <model name="column_1">
+      <pose>1 1 1 0 0 0</pose>
+      <static>true</static>
+      <link name="column_link">
+      <visual name="column_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.38</radius>
+            <length>2.0</length>
+          </cylinder>
+        </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/kitchen.material</uri>
+              <name></name>
+            </script>
+          </material>
+      </visual>
+      <collision name="column_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.38</radius>
+            <length>2.0</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      </link>
+    </model>
+
+    <model name="column_2">
+      <pose>0 -1.25 1 0 0 0</pose>
+      <static>true</static>
+      <link name="column_link">
+      <visual name="column_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.38</radius>
+            <length>2.0</length>
+          </cylinder>
+        </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/kitchen.material</uri>
+              <name>Gazebo/PaintedWall</name>
+            </script>
+          </material>
+      </visual>
+      <collision name="column_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.38</radius>
+            <length>2.0</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      </link>
+    </model>
+    
+    <!-- Change the gazebo camera point of view -->
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <pose>0 -6 16.0 0.0 1.57 -3.14159</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>
+
