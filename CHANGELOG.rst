@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.40 (2020-05-26)
+-------------------
 * Merge branch 'add-small-office-inventory' into 'erbium-devel'
   added small office inventory (clone of small office)
   See merge request common/pal_gazebo_worlds!38
