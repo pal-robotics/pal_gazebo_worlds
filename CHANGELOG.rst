@@ -2,6 +2,18 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add-small-office-inventory' into 'erbium-devel'
+  added small office inventory (clone of small office)
+  See merge request common/pal_gazebo_worlds!38
+* added small office inventory (clone of small office)
+* Merge branch 'featured-world' into 'erbium-devel'
+  added featured world for ari navigation simulation
+  See merge request common/pal_gazebo_worlds!37
+* added featured world for ari navigation simulation
+* Contributors: Federico Nardi, Procópio Stein, procopiostein
+
 2.0.39 (2020-05-04)
 -------------------
 * added calibration room
