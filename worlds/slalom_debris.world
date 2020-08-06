@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <physics type="ode">
+      <gravity>0 0 -9.81</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+          <sor>1.4</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100.0</contact_max_correcting_vel>
+          <contact_surface_layer>0.0</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+      <pose>0 0 5.0 0 0 0</pose>
+    </include>
+
+  <include>
+    <uri>model://sun</uri>
+    <pose>0 1 2. 0 0 0</pose>
+  </include>
+
+  <model name='camera'>
+       <static>true</static>
+       <pose>0.4 4. 1.7 0 0.35 -1.633185</pose>
+       <link name='link'>
+         <visual name='visual'>
+           <geometry>
+             <box>
+               <size>0.1 0.1 0.1</size>
+             </box>
+           </geometry>
+         </visual>
+         <sensor name='my_camera' type='camera'>
+           <camera>
+             <save enabled="true">
+               <path>/home/user/exchange/gazebo_cam/slalom</path>
+             </save>
+             <horizontal_fov>1.047</horizontal_fov>
+             <image>
+               <width>1920</width>
+               <height>1080</height>
+             </image>
+             <clip>
+               <near>0.1</near>
+               <far>100</far>
+             </clip>
+           </camera>
+           <always_on>1</always_on>
+           <update_rate>30</update_rate>
+         </sensor>
+       </link>
+     </model>
+
+    <model name="mesh_slalom_debris">
+      <pose>0 0 -0.02 0 0 0</pose>
+      <static>true</static>
+      <link name="box_1_body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.0</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>1.0</iyy>
+            <iyz>0.0</iyz>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <mesh><uri>file://meshes/slalom_debris_backup.stl</uri></mesh>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://meshes/slalom_debris.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>
+
+
+
+
+<mesh><uri>file://my_mesh.dae</uri></mesh>
