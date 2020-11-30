@@ -1,0 +1,14 @@
+material Aruco/aruco_marker_12cm_150
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Aruco_12cm_150.png
+			}
+		}
+	}
+}
+
