@@ -27,7 +27,7 @@
 import os
 from os import environ, pathsep
 
-from ament_index_python.packages import get_package_share_directory
+from ament_index_python.packages import get_package_share_directory, get_package_prefix
 
 
 from launch import LaunchDescription
@@ -38,17 +38,17 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 def generate_launch_description():
     # Attempt to find pal_gazebo_worlds_private, ignore if not available
     try:
-        priv_pkg_path = get_package_share_directory(
+        priv_pkg_path = get_package_prefix(
             'pal_gazebo_worlds_private')
-        model_path = os.path.join(priv_pkg_path, "models") + pathsep
+        model_path = os.path.join(priv_pkg_path, "share") + pathsep
         resource_path = priv_pkg_path + pathsep
     except:
         model_path = ""
         resource_path = ""
 
     # Add pal_gazebo_worlds path
-    pkg_path = get_package_share_directory('pal_gazebo_worlds')
-    model_path += os.path.join(pkg_path, "models")
+    pkg_path = get_package_prefix('pal_gazebo_worlds')
+    model_path += os.path.join(pkg_path, "share")
     resource_path += pkg_path
 
     if 'GAZEBO_MODEL_PATH' in environ:
@@ -60,6 +60,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch'), '/gazebo.launch.py']),
     )
+    print(model_path)
 
     return LaunchDescription([
         DeclareLaunchArgument(
