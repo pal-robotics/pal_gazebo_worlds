@@ -32,6 +32,7 @@ from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, SetEnvironmentVariable
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, PythonExpression
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
@@ -56,23 +57,25 @@ def generate_launch_description():
     if 'GAZEBO_RESOURCE_PATH' in environ:
         resource_path += pathsep+environ['GAZEBO_RESOURCE_PATH']
 
+    declare_world_name = DeclareLaunchArgument(
+            'world_name', default_value='',
+            description='Specify world name, we\'ll convert to full path'
+        )
+
+    world_path = PathJoinSubstitution(
+            substitutions=[pkg_path, "worlds",
+                           PythonExpression(['"', LaunchConfiguration("world_name"), '.world"'])])
+
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch'), '/gazebo.launch.py']),
+        launch_arguments={'world': world_path}.items(),
     )
-    print(model_path)
 
     return LaunchDescription([
-        DeclareLaunchArgument(
-            'world_name', default_value='',
-            description='Specify world name, we\'ll convert to full path'
-        ),
-        DeclareLaunchArgument(
-            'version', default_value='false',
-            description='Set "true" to output version information.'
-        ),
+        declare_world_name,
         SetEnvironmentVariable("GAZEBO_MODEL_PATH", model_path),
         # Using this prevents shared library from being found
-        # SetEnvironmentVariable("GAZEBO_RESOURCE_PATH", resource_path), 
+        # SetEnvironmentVariable("GAZEBO_RESOURCE_PATH", resource_path),
         gazebo,
     ])
