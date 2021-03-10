@@ -11,9 +11,6 @@
   <depend>rclcpp</depend>
   <depend>gazebo_msgs</depend>
   <exec_depend>gazebo_ros</exec_depend>
-  <test_depend>roscpp</test_depend>
-  <test_depend>rostest</test_depend>
-  <test_depend>gazebo_msgs</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
