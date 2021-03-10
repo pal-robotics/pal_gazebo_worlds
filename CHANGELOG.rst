@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.2 (2021-03-10)
+------------------
 * Add missing ament_cmake_auto dependency
 * Contributors: Victor Lopez
 
