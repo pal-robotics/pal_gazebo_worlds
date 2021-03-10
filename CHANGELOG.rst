@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add missing ament_cmake_auto dependency
+* Contributors: Victor Lopez
+
 3.0.1 (2021-03-10)
 ------------------
 * Remove ROS1 dependencies
