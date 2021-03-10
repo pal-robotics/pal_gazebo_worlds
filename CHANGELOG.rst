@@ -2,6 +2,15 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add notice about missing gazebo services
+* Parse properly world_name
+* Fixes to gazebo paths
+* Fix path of models env variable
+* First foxy launch file
+* Contributors: Victor Lopez
+
 2.0.40 (2020-05-26)
 -------------------
 * Merge branch 'add-small-office-inventory' into 'erbium-devel'
