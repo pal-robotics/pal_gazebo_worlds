@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.1 (2021-03-10)
+------------------
 * Remove ROS1 dependencies
 * Contributors: Victor Lopez
 
