@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove ROS1 dependencies
+* Contributors: Victor Lopez
+
 3.0.0 (2021-03-10)
 ------------------
 * Add notice about missing gazebo services
