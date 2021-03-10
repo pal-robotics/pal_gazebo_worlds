@@ -12,6 +12,8 @@ find_package(ament_cmake_pal QUIET)
 
 #include_directories(SYSTEM ${catkin_INCLUDE_DIRS})
 
+# Will migrate when https://github.com/ros-simulation/gazebo_ros_pkgs/pull/973 is merged
+# Or when get/set physics_properties services are added to gazebo
 #add_executable(increase_real_time_factor src/increase_real_time_factor.cpp)
 #target_link_libraries(increase_real_time_factor ${catkin_LIBRARIES})
 
