@@ -30,38 +30,6 @@
     <pose>0 1 2. 0 0 0</pose>
   </include>
 
-  <model name='camera'>
-       <static>true</static>
-       <pose>0.4 4. 1.7 0 0.35 -1.633185</pose>
-       <link name='link'>
-         <visual name='visual'>
-           <geometry>
-             <box>
-               <size>0.1 0.1 0.1</size>
-             </box>
-           </geometry>
-         </visual>
-         <sensor name='my_camera' type='camera'>
-           <camera>
-             <save enabled="true">
-               <path>/home/user/exchange/gazebo_cam/slalom</path>
-             </save>
-             <horizontal_fov>1.047</horizontal_fov>
-             <image>
-               <width>1920</width>
-               <height>1080</height>
-             </image>
-             <clip>
-               <near>0.1</near>
-               <far>100</far>
-             </clip>
-           </camera>
-           <always_on>1</always_on>
-           <update_rate>30</update_rate>
-         </sensor>
-       </link>
-     </model>
-
     <model name="mesh_slalom_debris">
       <pose>0 0 -0.02 0 0 0</pose>
       <static>true</static>
