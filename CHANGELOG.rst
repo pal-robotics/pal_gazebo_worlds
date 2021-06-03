@@ -2,6 +2,18 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Wait for time before initialization
+* Merge branch 'memmo_worlds' into 'erbium-devel'
+  Add worlds used in Memmo demos
+  See merge request common/pal_gazebo_worlds!39
+* remove "camera" model from the new worlds
+* Add world slalom_debris
+* Add world bauzil_stairs
+* Add aruco_marker_12cm_150
+* Contributors: Jordan Palacios, Pierre Fernbach, Victor Lopez
+
 2.0.40 (2020-05-26)
 -------------------
 * Merge branch 'add-small-office-inventory' into 'erbium-devel'
