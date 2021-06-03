@@ -15,6 +15,7 @@ int main(int argc, char** argv)
 {
   ros::init(argc, argv, "increase_real_time_factor");
   ros::NodeHandle nh("~");
+  ros::Time::waitForValid();
 
   double real_time_factor = 0.0;
   nh.param<double>("real_time_factor", real_time_factor, 1.0);
