@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.41 (2021-06-03)
+-------------------
 * Wait for time before initialization
 * Merge branch 'memmo_worlds' into 'erbium-devel'
   Add worlds used in Memmo demos
