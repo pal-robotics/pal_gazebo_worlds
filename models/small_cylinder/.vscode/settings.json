@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/noeljimenez/ws/devel/lib/python2.7/dist-packages",
+        "/opt/pal/ferrum/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/noeljimenez/ws/devel/lib/python2.7/dist-packages",
+        "/opt/pal/ferrum/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ]
+}
