@@ -11,6 +11,7 @@
   <depend>roscpp</depend>
   <depend>gazebo_msgs</depend>
   <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>pal_gazebo_plugins</exec_depend>
   <test_depend>roscpp</test_depend>
   <test_depend>rostest</test_depend>
   <test_depend>gazebo_msgs</test_depend>
