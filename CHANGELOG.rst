@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.42 (2021-08-26)
+-------------------
 * Merge branch 'kangaroo_wbc' into 'erbium-devel'
   Add high resolution world
   See merge request common/pal_gazebo_worlds!42
