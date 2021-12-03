@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.43 (2021-12-03)
+-------------------
 * Merge branch 'navigation_dynamic_obstacles_test' into 'erbium-devel'
   Navigation dynamic obstacles test
   See merge request common/pal_gazebo_worlds!40
