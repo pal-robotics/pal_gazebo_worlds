@@ -2,6 +2,23 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'navigation_dynamic_obstacles_test' into 'erbium-devel'
+  Navigation dynamic obstacles test
+  See merge request common/pal_gazebo_worlds!40
+* Merge branch 'scafo_demo_world' into 'erbium-devel'
+  Add scafo world
+  See merge request common/pal_gazebo_worlds!46
+* Add scafo world
+* add collisions plugin
+* rm unnecesary files
+* corridor_85cm world
+* move corridor worlds to origin
+* small cylinder model
+* empty room world
+* Contributors: Noel Jimenez Garcia, cescfolch, victor
+
 2.0.42 (2021-08-26)
 -------------------
 * Merge branch 'kangaroo_wbc' into 'erbium-devel'
