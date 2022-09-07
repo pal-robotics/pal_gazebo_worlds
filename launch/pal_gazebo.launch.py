@@ -31,10 +31,8 @@ from ament_index_python.packages import get_package_share_directory
 
 
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, SetEnvironmentVariable
+from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable, ExecuteProcess
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, PythonExpression
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-
 
 def generate_launch_description():
     # Attempt to find pal_gazebo_worlds_private, ignore if not available
@@ -66,16 +64,19 @@ def generate_launch_description():
             substitutions=[pkg_path, "worlds",
                            PythonExpression(['"', LaunchConfiguration("world_name"), '.world"'])])
 
-    gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('gazebo_ros'), 'launch'), '/gazebo.launch.py']),
-        launch_arguments={'world': world_path}.items(),
-    )
+    start_gazebo_server_cmd = ExecuteProcess(
+    cmd=['gzserver', '-s', 'libgazebo_ros_init.so',
+        '-s', 'libgazebo_ros_factory.so', world_path],
+        output='screen')
+
+    start_gazebo_client_cmd = ExecuteProcess(
+        cmd=['gzclient'], output='screen')
 
     return LaunchDescription([
         declare_world_name,
         SetEnvironmentVariable("GAZEBO_MODEL_PATH", model_path),
         # Using this prevents shared library from being found
         # SetEnvironmentVariable("GAZEBO_RESOURCE_PATH", resource_path),
-        gazebo,
+        start_gazebo_server_cmd,
+        start_gazebo_client_cmd,
     ])
