@@ -5,7 +5,7 @@
   <description>Simulation worlds for PAL robots.</description>
   <maintainer email="jordan.palacios@pal-robotics.com">Jordan Palacios</maintainer>
   <maintainer email="noel.jimenez@pal-robotics.com">Noel Jimenez</maintainer>
-  <license>LGPL-3.0</license>
+  <license>Apache License 2.0</license>
   <author email="victor.lopez@pal-robotics.com">Victor Lopez</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
