@@ -72,11 +72,16 @@ def generate_launch_description():
     start_gazebo_client_cmd = ExecuteProcess(
         cmd=['gzclient'], output='screen')
 
-    return LaunchDescription([
-        declare_world_name,
-        SetEnvironmentVariable("GAZEBO_MODEL_PATH", model_path),
-        # Using this prevents shared library from being found
-        # SetEnvironmentVariable("GAZEBO_RESOURCE_PATH", resource_path),
-        start_gazebo_server_cmd,
-        start_gazebo_client_cmd,
-    ])
+    # Create the launch description and populate
+    ld = LaunchDescription()
+
+    ld.add_action(declare_world_name)
+
+    ld.add_action(SetEnvironmentVariable("GAZEBO_MODEL_PATH", model_path))
+    # Using this prevents shared library from being found
+    # ld.add_action(SetEnvironmentVariable("GAZEBO_RESOURCE_PATH", resource_path))
+
+    ld.add_action(start_gazebo_server_cmd)
+    ld.add_action(start_gazebo_client_cmd)
+
+    return ld
