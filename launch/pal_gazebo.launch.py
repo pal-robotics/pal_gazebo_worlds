@@ -17,25 +17,25 @@ from os import environ, pathsep
 
 from ament_index_python.packages import get_package_share_directory
 
-
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable, ExecuteProcess
+from launch.actions import DeclareLaunchArgument, ExecuteProcess, SetEnvironmentVariable
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, PythonExpression
+
 
 def generate_launch_description():
     # Attempt to find pal_gazebo_worlds_private, ignore if not available
     try:
         priv_pkg_path = get_package_share_directory(
             'pal_gazebo_worlds_private')
-        model_path = os.path.join(priv_pkg_path, "models") + pathsep
+        model_path = os.path.join(priv_pkg_path, 'models') + pathsep
         resource_path = priv_pkg_path + pathsep
-    except:
-        model_path = ""
-        resource_path = ""
+    except Exception:
+        model_path = ''
+        resource_path = ''
 
     # Add pal_gazebo_worlds path
     pkg_path = get_package_share_directory('pal_gazebo_worlds')
-    model_path += os.path.join(pkg_path, "models")
+    model_path += os.path.join(pkg_path, 'models')
     resource_path += pkg_path
 
     if 'GAZEBO_MODEL_PATH' in environ:
@@ -45,16 +45,16 @@ def generate_launch_description():
 
     declare_world_name = DeclareLaunchArgument(
             'world_name', default_value='',
-            description='Specify world name, we\'ll convert to full path'
+            description="Specify world name, we'll convert to full path"
         )
 
     world_path = PathJoinSubstitution(
-            substitutions=[pkg_path, "worlds",
-                           PythonExpression(['"', LaunchConfiguration("world_name"), '.world"'])])
+            substitutions=[pkg_path, 'worlds',
+                           PythonExpression(['"', LaunchConfiguration('world_name'), '.world"'])])
 
     start_gazebo_server_cmd = ExecuteProcess(
-    cmd=['gzserver', '-s', 'libgazebo_ros_init.so',
-        '-s', 'libgazebo_ros_factory.so', world_path],
+        cmd=['gzserver', '-s', 'libgazebo_ros_init.so',
+             '-s', 'libgazebo_ros_factory.so', world_path],
         output='screen')
 
     start_gazebo_client_cmd = ExecuteProcess(
@@ -65,9 +65,9 @@ def generate_launch_description():
 
     ld.add_action(declare_world_name)
 
-    ld.add_action(SetEnvironmentVariable("GAZEBO_MODEL_PATH", model_path))
+    ld.add_action(SetEnvironmentVariable('GAZEBO_MODEL_PATH', model_path))
     # Using this prevents shared library from being found
-    # ld.add_action(SetEnvironmentVariable("GAZEBO_RESOURCE_PATH", resource_path))
+    # ld.add_action(SetEnvironmentVariable('GAZEBO_RESOURCE_PATH', resource_path))
 
     ld.add_action(start_gazebo_server_cmd)
     ld.add_action(start_gazebo_client_cmd)
