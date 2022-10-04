@@ -31,6 +31,10 @@ find_package(ament_cmake_pal QUIET)
 #  target_link_libraries(run_gazebo_server-test ${roscpp_LIBRARIES})
 #endif(CATKIN_ENABLE_TESTING)
 
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
 ament_auto_package(INSTALL_TO_SHARE launch models worlds urdf meshes)
 
