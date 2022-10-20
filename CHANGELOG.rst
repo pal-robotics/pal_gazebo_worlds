@@ -2,6 +2,52 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup
+  See merge request common/pal_gazebo_worlds!55
+* cleanup
+* Merge branch 'linters' into 'humble-devel'
+  Linters
+  See merge request common/pal_gazebo_worlds!54
+* linters
+* CONTRIBUTING.md
+* add linters
+* Merge branch 'update_copyright' into 'humble-devel'
+  Update copyright
+  See merge request common/pal_gazebo_worlds!51
+* restore original LICENSE
+* update copyright and license
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup
+  See merge request common/pal_gazebo_worlds!53
+* rm ros1 launcher and test
+* Merge branch 'refactor_ld' into 'humble-devel'
+  Refactor LaunchDescription population
+  See merge request common/pal_gazebo_worlds!52
+* refactor LaunchDescription population
+* Merge branch 'update_maintainers' into 'humble-devel'
+  update maintainers
+  See merge request common/pal_gazebo_worlds!50
+* update maintainers
+* Merge branch 'humble_fixes' into 'humble-devel'
+  update way of launching gazebo
+  See merge request common/pal_gazebo_worlds!48
+* update way to launch gazebo
+* Merge branch 'foxy_obstacle_avoidance' into 'foxy-devel'
+  Foxy obstacle avoidance
+  See merge request common/pal_gazebo_worlds!43
+* add gazebo_ros_state plugin
+* Merge branch 'foxy_obstacle_avoidance' into 'foxy-devel'
+  Foxy obstacle avoidance
+  See merge request common/pal_gazebo_worlds!41
+* move corridor worlds to origin
+* empty room world
+* small cylinder model
+* corridor_85cm world
+* Contributors: Jordan Palacios, Noel Jimenez, Noel Jimenez Garcia, victor
+
 3.0.2 (2021-03-10)
 ------------------
 * Add missing ament_cmake_auto dependency
