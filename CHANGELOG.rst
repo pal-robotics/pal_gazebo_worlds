@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.3 (2022-10-20)
+------------------
 * Merge branch 'cleanup' into 'humble-devel'
   Cleanup
   See merge request common/pal_gazebo_worlds!55
