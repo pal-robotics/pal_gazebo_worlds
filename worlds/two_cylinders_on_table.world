@@ -45,12 +45,18 @@
     <!-- Object on the table -->
     <include>
       <uri>model://biscuits_pack</uri>
-      <pose>0.90 -0.02 0.89 0 0 0</pose>
+      <name>cylinder1</name>
+      <pose>0.90 -0.15 0.93 0 0 2.62</pose>
+    </include>
+    <include>
+      <uri>model://biscuits_pack</uri>
+      <name>cylinder2</name>
+      <pose>0.90 0.15 0.93 0 0 2.62</pose>
     </include>
 
     <gui fullscreen="0">
       <camera name="user_camera">
-        <pose>1.80664 1.8542 1.9639 0 0.513797 -2.19659</pose>
+        <pose>1.152670 -0.041479 3.496780 0.000000 1.123640 3.132190</pose>
         <view_controller>orbit</view_controller>
       </camera>
     </gui>
