@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <world name='default'>
+    <physics type='ode'>
+      <gravity>0.000000 0.000000 -9.810000</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>20</iters>
+          <sor>1.000000</sor>
+        </solver>
+        <constraints>
+          <cfm>0.000000</cfm>
+          <erp>0.200000</erp>
+          <contact_max_correcting_vel>100.000000</contact_max_correcting_vel>
+          <contact_surface_layer>0.000000</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>1000.000000</real_time_update_rate>
+      <max_step_size>0.001000</max_step_size>
+      <real_time_factor>1.000000</real_time_factor>
+      <max_contacts>20</max_contacts>
+    </physics>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0.000000 0.000000 10.000000 0.000000 0.000000 0.000000</pose>
+      <diffuse>0.800000 0.800000 0.800000 1.000000</diffuse>
+      <specular>0.200000 0.200000 0.200000 1.000000</specular>
+      <attenuation>
+        <range>1000.000000</range>
+        <constant>0.900000</constant>
+        <linear>0.010000</linear>
+        <quadratic>0.001000</quadratic>
+      </attenuation>
+      <direction>0.500000 0.100000 -0.900000</direction>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0.000000 0.000000 1.000000</normal>
+              <size>100.000000 100.000000</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100.000000</mu>
+                <mu2>50.000000</mu2>
+              </ode>
+            </friction>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0.000000 0.000000 1.000000</normal>
+              <size>100.000000 100.000000</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Orange</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <scene>
+      <ambient>0.200000 0.200000 0.200000 1.000000</ambient>
+      <background>0.700000 0.700000 0.700000 1.000000</background>
+      <shadows>1</shadows>
+    </scene>   
+    <model name='ramp'>
+      <static>1</static>
+      <link name='ramp_link'>
+        <collision name='ramp_up_collision'>
+          <pose>0.000000 0.000000 0.500000 0.000000 0.124355 0.000000</pose>
+          <geometry>
+            <box>
+              <size>8.062260 2.000000 0.010000</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='ramp_up_visual'>
+          <pose>0.000000 0.000000 0.500000 0.000000 0.124355 0.000000</pose>
+          <geometry>
+            <box>
+              <size>8.062258 2.000000 0.010000</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+          <cast_shadows>0</cast_shadows>
+        </visual>
+        <collision name='plane_collision'>
+          <pose>-6.000000 0.000000 1.000000 0.000000 0.000000 0.000000</pose>
+          <geometry>
+            <box>
+              <size>4.000000 2.000000 0.010000</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='plane_visual'>
+          <pose>-6.000000 0.000000 1.000000 0.000000 0.000000 0.000000</pose>
+          <geometry>
+            <box>
+              <size>4.000000 2.000000 0.010000</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+          <cast_shadows>0</cast_shadows>
+        </visual>
+        <collision name='ramp_down_collision'>
+          <pose>-12.000000 0.000000 0.500000 0.000000 -0.124355 0.000000</pose>
+          <geometry>
+            <box>
+              <size>8.062260 2.000000 0.010000</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='ramp_down_visual'>
+          <pose>-12.000000 0.000000 0.500000 0.000000 -0.124355 0.000000</pose>
+          <geometry>
+            <box>
+              <size>8.062258 2.000000 0.010000</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+          <cast_shadows>0</cast_shadows>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>6.000000 4.000000 0.000000 0.000000 0.000000 0.000000</pose>
+    </model>
+    <state world_name='default'>
+      <sim_time>0 0</sim_time>
+      <real_time>0 36677</real_time>
+      <wall_time>1375293235 471791087</wall_time>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>9.101490 -1.464570 3.028600 0.000000 0.299643 2.576190</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>
