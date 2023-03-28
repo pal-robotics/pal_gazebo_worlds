@@ -19,19 +19,11 @@
       <real_time_update_rate>1000</real_time_update_rate>
       <max_step_size>0.001</max_step_size>
     </physics>
-    <light type="directional" name="light1">
-      <cast_shadows>true</cast_shadows>
-      <pose>-2 0 4 0 0 0</pose>
-      <diffuse>1.0 1.0 1.0 1</diffuse>
-      <specular>0.1 0.1 0.1 1</specular>
-      <attenuation>
-        <range>20</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <direction>0.2 0.0 -1.0</direction>
-    </light>
+   <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
     <!-- A ground plane -->
     <include>
       <uri>model://ground_plane</uri>
@@ -62,11 +54,5 @@
       <uri>model://cylinder_yellow</uri>
       <pose>0.90 0.1 1.2 0 0 0</pose>
     </include>
-    <gui fullscreen="0">
-      <camera name="user_camera">
-        <pose>1.152670 -0.041479 3.496780 0.000000 1.123640 3.132190</pose>
-        <view_controller>orbit</view_controller>
-      </camera>
-    </gui>
   </world>
 </sdf>
