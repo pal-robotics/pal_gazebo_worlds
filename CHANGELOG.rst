@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.44 (2023-04-04)
+-------------------
 * Merge branch 'fix_world' into 'erbium-devel'
   Fix world
   See merge request common/pal_gazebo_worlds!56
