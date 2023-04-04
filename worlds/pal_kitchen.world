@@ -1,0 +1,498 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name='default'>
+    <physics type="ode">
+      <gravity>0 0 -9.81</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+          <sor>1.4</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100.0</contact_max_correcting_vel>
+          <contact_surface_layer>0.0</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <!-- Tables -->
+    <include>
+      <uri>model://kitchen_table</uri>
+      <name>kitchen_table_1</name>
+      <pose>-3.720071 0.992775 0.0 0 0.0 0.028873</pose>
+    </include>
+    <include>
+      <uri>model://kitchen_table</uri>
+      <name>kitchen_table_2</name>
+      <pose>-4.940301 2.477900 0.0 0.0 0.0 -3.111660</pose>
+    </include>
+    <include>
+      <uri>model://kitchen_table</uri>
+      <name>kitchen_table_3</name>
+      <pose>-7.843475 0.961082 0.0 0.0 0.0 0.011508</pose>
+    </include>
+    <!-- Chairs -->
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_1</name>
+      <pose>-3.51716 0.686822 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_2</name>
+      <pose>-4.02399 1.53161 0 0 0 -1.5477</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_3</name>
+      <pose>-4.03571 2.18004 0 0 0 -1.5477</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_4</name>
+      <pose>-5.93738 2.22868 0 0 0 -1.5477</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_5</name>
+      <pose>-5.91339 1.69259 0 0 0 -1.5477</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_6</name>
+      <pose>-3.17504 2.76494 0 0 0 -3.11272</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_7</name>
+      <pose>-5.13452 2.7096 0 0 0 -3.11272</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_8</name>
+      <pose>-2.64137 1.86945 0 0 -0 1.57076</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_9</name>
+      <pose>-2.66972 1.31488 0 0 -0 1.57076</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_10</name>
+      <pose>-4.75202 1.23343 0 0 -0 1.57076</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_11</name>
+      <pose>-4.71216 1.87871 0 0 -0 1.57076</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_12</name>
+      <pose>-6.78914 1.21324 0 0 -0 1.57076</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_13</name>
+      <pose>-0.241164 7.00163 0 0 0 -2.3916</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_14</name>
+      <pose>0.124608 5.10249 0 0 -0 0.036307</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_15</name>
+      <pose>-5.51051 0.707023 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>dining_chair_16</name>
+      <pose>-7.70412 0.708701 0 0 -0 0</pose>
+    </include>
+    <!-- Walls -->
+    <model name='wall_1'>
+      <pose frame=''>-3.723560 -1.231870 1.000000 0 0 0.053006</pose>
+      <static>1</static>
+      <link name='wall_1_body'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>11.284800 0.2 2.0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>11.284800 0.2 2.0</size>
+            </box>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='wall_2'>
+      <pose frame=''>-4.38328 6.82901 0.25 0 -0 0.346061</pose>
+      <static>1</static>
+      <link name='wall_2_body'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>12.456 0.2 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>12.456 0.2 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name='wall_3'>
+      <pose frame=''>-9.4051 0.82099 1 0 0 0.054201</pose>
+      <static>1</static>
+      <link name='wall_3_body'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.2 4.898110 2.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.2 4.898110 2.0</size>
+            </box>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+      </link>
+    </model>
+    <model name='wall_4'>
+      <pose frame=''>1.59865 4.01391 1 0 0 0.047287</pose>
+      <static>1</static>
+      <link name='wall_4_body'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.2 10.078400 2.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.2 10.078400 2.0</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name='wall_5'>
+      <pose frame=''>-9.86261 4.02557 1 0 0 -1.17761</pose>
+      <static>1</static>
+      <link name='wall_5_body'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1.754480 0.2 2.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1.754480 0.2 2.0</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <!-- Furnitures -->
+    <model name='water_machine'>
+      <pose frame=''>-3.56398 6.74263 0.506361 0 -0 0.001955</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.23</radius>
+              <length>1.01274</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.23</radius>
+              <length>1.01274</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='coffee_table'>
+      <pose frame=''>-1.73576 7.33308 0.375 0.0 -0 0.336027</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2.74216 0.39611 0.75</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.74216 0.39611 0.75</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='green_seat'>
+      <pose frame=''>1.04558 6.00716 0.236198 -1e-06 0 0.05094</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.435931 0.447539 0.472395</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.435931 0.447539 0.472395</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Green</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='red_seat'>
+      <pose frame=''>0.766426 6.9157 0.22067 3e-06 1e-06 0.368472</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.41336 0.379962 0.441339</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.41336 0.379962 0.441339</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='small_bin'>
+      <pose frame=''>-4.00908 6.50656 0.149094 4e-06 -6e-06 0.410459</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.305271 0.197006 0.298191</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.305271 0.197006 0.298191</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='sink_table_and_fridge'>
+      <pose frame=''>-7.19361 5.30171 0.46 0.0 0.0 0.33562</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>5.61828 0.465636 0.92</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>5.61828 0.465636 0.92</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='central_column'>
+      <pose frame=''>-2.91028 5.17288 1.0 0.0 0.0 -0.000405</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.43796 0.488825 2.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.43796 0.488825 2.0</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='side_column'>
+      <pose frame=''>-2.5349 -0.83907 1.0 0 -0 0.000313</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.572146 0.400179 2.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.572146 0.400179 2.0</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <!-- Object on the table to grasp -->
+    <include>
+      <uri>model://biscuits_pack</uri>
+      <name>biscuits_pack</name>
+      <pose>-1.73576 7.33308 0.80 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://aruco_cube</uri>
+      <name>aruco_cube</name>
+      <pose>-2.576698 7.033175 0.798869 0 0 0</pose>
+    </include>
+    <!-- Static human -->
+    <include>
+      <uri>model://citizen_extras_male_03</uri>
+      <name>citizen_extras_male_03</name>
+      <pose>-8.112512 1.332202 0.010903 0.012548 0.002317 1.558288</pose>
+    </include>
+  </world>
+</sdf>

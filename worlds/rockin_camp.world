@@ -1,0 +1,97 @@
+<sdf version='1.4'>
+  <world name='default'>
+    <!-- Default physics configuration -->
+    <physics type='ode'>
+      <gravity>0.000000 0.000000 -9.810000</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>20</iters>
+          <sor>1.000000</sor>
+        </solver>
+        <constraints>
+          <cfm>0.000000</cfm>
+          <erp>0.200000</erp>
+          <contact_max_correcting_vel>100.000000</contact_max_correcting_vel>
+          <contact_surface_layer>0.000000</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>1000.000000</real_time_update_rate>
+      <max_step_size>0.001000</max_step_size>
+      <real_time_factor>1.000000</real_time_factor>
+      <max_contacts>20</max_contacts>
+    </physics>
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Walls -->
+    <include>
+      <uri>model://rockin_camp</uri>
+      <name>rockin_walls</name>
+      <pose>-1.28 -7.68 0 0 0 1.5708</pose>
+    </include>
+
+    <!-- Sofa (obstructing) -->
+    <include>
+      <uri>model://sofa</uri>
+      <name>sofa</name>
+      <pose>2.0078 -3.820 0 0 0 -1.5524</pose>
+    </include>
+
+    <!-- Table 1 -->
+    <include>
+      <uri>model://table_0m8</uri>
+      <name>table1</name>
+      <pose>3.079378 -0.74822 0 0 0 1.5708</pose>
+    </include>
+
+    <!-- Chairs for Table 1 -->
+    <include>
+      <uri>model://kitchen_chair</uri>
+      <name>table1_chair1</name>
+      <pose>2.88 -0.14399 0 0 0 -1.5523</pose>
+    </include>
+    <include>
+      <uri>model://kitchen_chair</uri>
+      <name>table1_chair2</name>
+      <pose>3.545 -0.45399 0 0 0 -3.1092</pose>
+    </include>
+
+    <!-- Table 2 (larger) -->
+    <include>
+      <uri>model://kitchen_table</uri>
+      <name>table2</name>
+      <pose>4.7445 -3.8387 0 0 0 0.0108</pose>
+    </include>
+
+    <!-- Chair for Table 2 -->
+    <include>
+      <uri>model://dining_chair</uri>
+      <name>table2_chair</name>
+      <pose>4.630 -2.89967 0 0 0 -1.55238</pose>
+    </include>
+
+    <!-- Plant -->
+    <include>
+      <uri>model://plant</uri>
+      <name>plant</name>
+      <pose>-0.8856 -6.1280 0 0 0 1.5708</pose>
+    </include>
+
+    <!-- Camera Position -->
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>5.694260 7.254210 18.725000 0.000000 1.145800 -3.134990</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>

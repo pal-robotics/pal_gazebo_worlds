@@ -375,7 +375,7 @@
       <shadows>1</shadows>
     </scene>
     <model name="cabinet">
-      <static>1</static>
+      <static>0</static>
       <link name="cabinet_bottom_plate">
         <inertial>
           <pose>0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000</pose>
@@ -592,7 +592,7 @@
       <pose>2.0 1.0 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="cabinet_0">
-      <static>1</static>
+      <static>0</static>
       <link name="cabinet_bottom_plate">
         <inertial>
           <pose>0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000</pose>
@@ -809,7 +809,7 @@
       <pose>2.51573 -5.43949 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="bookshelf">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <inertial>
           <mass>1.000000</mass>
@@ -1049,7 +1049,7 @@
       <pose>2.0 -9.55401 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="bookshelf_0">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <inertial>
           <mass>1.000000</mass>
@@ -1289,7 +1289,7 @@
       <pose>-2.49657 -1.57894 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="bookshelf_1">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <inertial>
           <mass>1.000000</mass>
@@ -1529,10 +1529,10 @@
       <pose>-2.49816 1.46785 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="table">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <collision name="surface">
-          <pose>0.000000 0.000000 1.000000 0.000000 0.000000 0.000000</pose>
+          <pose>0.000000 0.000000 0.900000 0.000000 0.000000 0.000000</pose>
           <geometry>
             <box>
               <size>1.500000 0.800000 0.030000</size>
@@ -1550,7 +1550,7 @@
           <max_contacts>10</max_contacts>
         </collision>
         <visual name="visual1">
-          <pose>0.000000 0.000000 1.000000 0.000000 0.000000 0.000000</pose>
+          <pose>0.000000 0.000000 0.900000 0.000000 0.000000 0.000000</pose>
           <geometry>
             <box>
               <size>1.500000 0.800000 0.030000</size>
@@ -1568,7 +1568,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -1587,7 +1587,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -1602,7 +1602,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -1621,7 +1621,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -1636,7 +1636,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -1655,7 +1655,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -1670,7 +1670,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -1689,7 +1689,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -1710,7 +1710,7 @@
       <pose>-1.0 -9.0 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="cabinet_1">
-      <static>1</static>
+      <static>0</static>
       <link name="cabinet_bottom_plate">
         <inertial>
           <pose>0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000</pose>
@@ -1927,7 +1927,7 @@
       <pose>-3.0 -4.40005 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="cabinet_2">
-      <static>1</static>
+      <static>0</static>
       <link name="cabinet_bottom_plate">
         <inertial>
           <pose>0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000</pose>
@@ -2144,7 +2144,7 @@
       <pose>-1.49183 -4.45622 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="bookshelf_2">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <inertial>
           <mass>1.000000</mass>
@@ -2384,10 +2384,10 @@
       <pose>-3.41849 -7.0 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="table_0">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <collision name="surface">
-          <pose>0.000000 0.000000 1.000000 0.000000 0.000000 0.000000</pose>
+          <pose>0.000000 0.000000 0.900000 0.000000 0.000000 0.000000</pose>
           <geometry>
             <box>
               <size>1.500000 0.800000 0.030000</size>
@@ -2405,7 +2405,7 @@
           <max_contacts>10</max_contacts>
         </collision>
         <visual name="visual1">
-          <pose>0.000000 0.000000 1.000000 0.000000 0.000000 0.000000</pose>
+          <pose>0.000000 0.000000 0.900000 0.000000 0.000000 0.000000</pose>
           <geometry>
             <box>
               <size>1.500000 0.800000 0.030000</size>
@@ -2423,7 +2423,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -2442,7 +2442,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -2457,7 +2457,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -2476,7 +2476,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -2491,7 +2491,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -2510,7 +2510,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -2525,7 +2525,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -2544,7 +2544,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -2565,10 +2565,10 @@
       <pose>-1.0 -7.0 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="table_1">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <collision name="surface">
-          <pose>0.000000 0.000000 1.000000 0.000000 0.000000 0.000000</pose>
+          <pose>0.000000 0.000000 0.900000 0.000000 0.000000 0.000000</pose>
           <geometry>
             <box>
               <size>1.500000 0.800000 0.030000</size>
@@ -2586,7 +2586,7 @@
           <max_contacts>10</max_contacts>
         </collision>
         <visual name="visual1">
-          <pose>0.000000 0.000000 1.000000 0.000000 0.000000 0.000000</pose>
+          <pose>0.000000 0.000000 0.900000 0.000000 0.000000 0.000000</pose>
           <geometry>
             <box>
               <size>1.500000 0.800000 0.030000</size>
@@ -2604,7 +2604,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -2623,7 +2623,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -2638,7 +2638,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -2657,7 +2657,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -2672,7 +2672,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -2691,7 +2691,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -2706,7 +2706,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <surface>
@@ -2725,7 +2725,7 @@
           <geometry>
             <cylinder>
               <radius>0.020000</radius>
-              <length>1.000000</length>
+              <length>0.800000</length>
             </cylinder>
           </geometry>
           <material>
@@ -2746,7 +2746,7 @@
       <pose>-1.0 -11.0 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="cabinet_3">
-      <static>1</static>
+      <static>0</static>
       <link name="cabinet_bottom_plate">
         <inertial>
           <pose>0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000</pose>
@@ -2963,7 +2963,7 @@
       <pose>3.0 -1.0 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="bookshelf_3">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <inertial>
           <mass>1.000000</mass>
@@ -3203,7 +3203,7 @@
       <pose>2.45055 -12.0 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="bookshelf_4">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <inertial>
           <mass>1.000000</mass>
@@ -3443,7 +3443,7 @@
       <pose>2.51316 -8.0 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="bookshelf_5">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <inertial>
           <mass>1.000000</mass>
@@ -3683,7 +3683,7 @@
       <pose>-3.53929 -10.42222 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="bookshelf_6">
-      <static>1</static>
+      <static>0</static>
       <link name="link">
         <inertial>
           <mass>1.000000</mass>
@@ -3923,7 +3923,7 @@
       <pose>-4.0 -5.47465 0.0 0.0 0.0 0.0</pose>
     </model>
     <model name="cabinet_4">
-      <static>1</static>
+      <static>0</static>
       <link name="cabinet_bottom_plate">
         <inertial>
           <pose>0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000</pose>

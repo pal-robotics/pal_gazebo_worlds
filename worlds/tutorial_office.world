@@ -256,6 +256,11 @@
       <uri>model://aruco_board</uri>
       <pose>-4.85 -0.86 1.35 0 0 0</pose>
     </include>
+    <!-- yolo -->
+    <include>
+      <uri>model://yolo</uri>
+      <pose>-4.902915 -0.926691 1.357876 0 0 0</pose>
+    </include>
     <!-- Add a REEM poster -->
     <include>
       <uri>model://wall_with_reem_photo</uri>

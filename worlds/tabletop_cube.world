@@ -40,12 +40,12 @@
     <include>
       <uri>model://table_0m8</uri>
       <name>table1</name>
-      <pose>0.88 0 0 0 0 0</pose>
+      <pose>1.1 0 0 0 0 0</pose>
     </include>
     <!-- Cube with ArUco markers on the sides -->
     <include>
       <uri>model://aruco_cube</uri>
-      <pose>0.53 -0.05 1.2 0 0 0</pose>
+      <pose>0.65 -0.05 1.2 0 0 0</pose>
     </include>
 
     <gui fullscreen="0">
@@ -56,3 +56,4 @@
     </gui>
   </world>
 </sdf>
+

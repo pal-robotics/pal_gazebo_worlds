@@ -4,37 +4,35 @@
       <static>0</static>
       <link name='link'>
         <inertial>
-          <mass>0.25</mass>
+          <mass>0.01</mass>
           <inertia>
-            <ixx>0.000000</ixx>
+            <ixx>0.001</ixx>
             <ixy>0.000000</ixy>
             <ixz>0.000000</ixz>
-            <iyy>0.000000</iyy>
+            <iyy>0.001</iyy>
             <iyz>0.000000</iyz>
-            <izz>0.000000</izz>
+            <izz>0.001</izz>
           </inertia>
         </inertial>
         <collision name='collision'>
           <geometry>
             <cylinder>
-              <radius>0.029</radius>
+              <radius>0.025</radius>
               <length>0.15</length>
             </cylinder>
           </geometry>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
+            <surface>
             <contact>
-              <ode/>
+              <ode>
+                <min_depth>0.005</min_depth>
+              </ode>
             </contact>
           </surface>
         </collision>
         <visual name='visual'>
           <geometry>
             <cylinder>
-              <radius>0.029</radius>
+              <radius>0.025</radius>
               <length>0.15</length>
             </cylinder>
           </geometry>
@@ -46,13 +44,8 @@
             </script>
           </material>
         </visual>
-        <velocity_decay>
-          <linear>0.000000</linear>
-          <angular>0.000000</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
         <gravity>1</gravity>        
       </link>   
   </model>
 </sdf>
+

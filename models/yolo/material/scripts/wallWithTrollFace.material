@@ -1,0 +1,13 @@
+material wallWithTrollFace
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture wallWithTrollFace1120x800.png
+			}
+		}
+	}
+}

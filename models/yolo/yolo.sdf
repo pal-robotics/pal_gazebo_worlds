@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="yolo">
+    <static>1</static>
+    <link name="link">
+      <visual name="visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 1.12 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+      	    <uri>model://yolo/material/scripts</uri>
+      	    <uri>model://yolo/material/textures</uri>
+            <name>wallWithTrollFace</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.02 1.12 0.8</size>
+          </box>
+        </geometry>
+      </collision>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+      <gravity>0</gravity>
+    </link>
+  </model>
+</sdf>
