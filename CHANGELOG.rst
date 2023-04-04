@@ -2,6 +2,28 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix_world' into 'erbium-devel'
+  Fix world
+  See merge request common/pal_gazebo_worlds!56
+* Add sdf version to avoid warning + fixing aruco_board and poster
+* Fix pal_kitchen and cabinet_grasping worlds + Adding Documentation in ReadMe
+* Add models from pmb2_gazebo package
+* Add world from pmb2
+* Import model fix from tiago gazebo package
+* Import fix from the tiago gazebo package
+* Merge branch 'fix/sliding' into 'erbium-devel'
+  fix robot sliding on world
+  See merge request common/pal_gazebo_worlds!49
+* fix robot sliding on world
+* Merge branch 'stairs_up' into 'erbium-devel'
+  Stairs up
+  See merge request common/pal_gazebo_worlds!47
+* Modify bauzil stairs model to be loaded in PAL Physics Simulator
+* Add bauzil stairs model. Modify world
+* Contributors: Adria Roig, Jordan Palacios, antoniobrandi, thomaspeyrucain
+
 2.0.43 (2021-12-03)
 -------------------
 * Merge branch 'navigation_dynamic_obstacles_test' into 'erbium-devel'
