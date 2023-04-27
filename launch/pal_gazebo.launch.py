@@ -49,12 +49,16 @@ def generate_launch_description():
         )
 
     world_path = PathJoinSubstitution(
-            substitutions=[pkg_path, 'worlds',
-                           PythonExpression(['"', LaunchConfiguration('world_name'), '.world"'])])
+        substitutions=[pkg_path, 'worlds',
+                       PythonExpression(['"', LaunchConfiguration('world_name'), '.world"'])])
+
+    params_file = PathJoinSubstitution(
+        substitutions=[pkg_path, 'config', 'gazebo_params.yaml'])
 
     start_gazebo_server_cmd = ExecuteProcess(
         cmd=['gzserver', '-s', 'libgazebo_ros_init.so',
-             '-s', 'libgazebo_ros_factory.so', world_path],
+             '-s', 'libgazebo_ros_factory.so', world_path,
+             '--ros-args', '--params-file', params_file],
         output='screen')
 
     start_gazebo_client_cmd = ExecuteProcess(
