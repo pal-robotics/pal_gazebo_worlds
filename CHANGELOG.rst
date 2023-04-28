@@ -2,6 +2,9 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 3.0.4 (2023-04-28)
 ------------------
 * Set gazebo publish rate
