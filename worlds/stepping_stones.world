@@ -28,7 +28,7 @@
             <uri>model://ground_plane</uri>
         </include>
         <model name="rectangle_6">
-            <pose>-0.2000 0.000000 0.03000 0.000000 0.000000 0.000000</pose>
+            <pose>0.8000 0.000000 0.03000 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="rectangle_6_body">
                 <inertial>
@@ -73,7 +73,7 @@
             </link>
         </model>
         <model name="rectangle_8">
-            <pose>-0.6000 0.000000 0.015 0.000000 0.000000 0.000000</pose>
+            <pose>0.4000 0.000000 0.015 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="rectangle_8_body">
                 <inertial>
@@ -118,7 +118,7 @@
             </link>
         </model>
         <model name="rectangle_0">
-            <pose>0.2000 0.20000 0.0600 0.000000 0.000000 0.000000</pose>
+            <pose>1.2000 0.20000 0.0600 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="rectangle_0_body">
                 <inertial>
@@ -163,7 +163,7 @@
             </link>
         </model>
         <model name="rectangle_1">
-            <pose>0.4000 -0.20000 0.050000 0.000000 0.000000 0.000000</pose>
+            <pose>1.4000 -0.20000 0.050000 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="rectangle_1_body">
                 <inertial>
@@ -208,7 +208,7 @@
             </link>
         </model>
         <model name="rectangle_3">
-            <pose>0.8000 0.20000 0.100000 0.000000 0.000000 0.000000</pose>
+            <pose>1.8000 0.20000 0.100000 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="rectangle_3_body">
                 <inertial>
@@ -253,7 +253,7 @@
             </link>
         </model>
         <model name="rectangle_5">
-            <pose>1.0000 -0.20000 0.070000 0.000000 0.000000 0.000000</pose>
+            <pose>2.0000 -0.20000 0.070000 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="rectangle_5_body">
                 <inertial>
@@ -298,7 +298,7 @@
             </link>
         </model>
         <model name="rectangle_7">
-            <pose>1.4 0.000000 0.0875000 0.000000 0.000000 0.000000</pose>
+            <pose>2.4 0.000000 0.0875000 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="rectangle_7_body">
                 <inertial>
@@ -343,7 +343,7 @@
             </link>
         </model>
         <model name="rectangle_9">
-            <pose>1.8 0.000000 0.04000 0.000000 0.000000 0.000000</pose>
+            <pose>2.8 0.000000 0.04000 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="rectangle_9_body">
                 <inertial>

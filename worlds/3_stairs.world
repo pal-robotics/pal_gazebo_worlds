@@ -28,7 +28,7 @@
             <uri>model://ground_plane</uri>
         </include>
         <model name="step_1">
-            <pose>0.26 0.000000 0.0500 0.000000 0.000000 0.000000</pose>
+            <pose>0.27 0.000000 0.0500 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="step_1_body">
                 <inertial>
@@ -73,7 +73,7 @@
             </link>
         </model>
         <model name="step_2">
-            <pose>0.565 0.00000 0.100 0.000000 0.000000 0.000000</pose>
+            <pose>0.575 0.00000 0.100 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="step_2_body">
                 <inertial>
@@ -118,7 +118,7 @@
             </link>
         </model>
         <model name="step_3">
-            <pose>0.87 0.000000 0.15 0.000000 0.000000 0.000000</pose>
+            <pose>0.88 0.000000 0.15 0.000000 0.000000 0.000000</pose>
             <static>true</static>
             <link name="step_3_body">
                 <inertial>
