@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.45 (2023-06-19)
+-------------------
 * Merge branch 'icra_demo' into 'erbium-devel'
   Add world with stairs and stepping stones for FSP ICRA demo
   See merge request common/pal_gazebo_worlds!59
