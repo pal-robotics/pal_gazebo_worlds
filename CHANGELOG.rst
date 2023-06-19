@@ -2,6 +2,17 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'icra_demo' into 'erbium-devel'
+  Add world with stairs and stepping stones for FSP ICRA demo
+  See merge request common/pal_gazebo_worlds!59
+* Rename stepping_stones world to include the number of steps
+* Rename 3_stairs to specificy the dimension in the filename
+* Move the new environments in order to have the robot start at (0;0)
+* Add world with stairs and stepping stones for FSP ICRA demo
+* Contributors: Jordan Palacios, Pierre Fernbach
+
 2.0.44 (2023-04-04)
 -------------------
 * Merge branch 'fix_world' into 'erbium-devel'
