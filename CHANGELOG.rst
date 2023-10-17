@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.46 (2023-10-17)
+-------------------
 * Merge branch 'icra-demo' into 'erbium-devel'
   Icra demo
   See merge request common/pal_gazebo_worlds!57
