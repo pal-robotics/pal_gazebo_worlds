@@ -2,6 +2,19 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'icra-demo' into 'erbium-devel'
+  Icra demo
+  See merge request common/pal_gazebo_worlds!57
+* Created new world for icra demo
+* Remove redundant surface params from tables and align indentation
+* Update cube friction and object metadata
+* Update icra demo worlds
+* Add lower tables for demo
+* add icra demo worlds with cylinders and cubes with proper firction and inertia
+* Contributors: David ter Kuile, Jordan Palacios, sergiacosta
+
 2.0.45 (2023-06-19)
 -------------------
 * Merge branch 'icra_demo' into 'erbium-devel'
