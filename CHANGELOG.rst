@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add website tag
+* Contributors: Noel Jimenez
+
 4.0.0 (2023-04-28)
 ------------------
 
