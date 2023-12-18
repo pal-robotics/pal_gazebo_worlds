@@ -18,12 +18,40 @@ from os import environ, pathsep
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, ExecuteProcess, SetEnvironmentVariable
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, PythonExpression
+from launch.actions import (
+    DeclareLaunchArgument,
+    SetEnvironmentVariable,
+    ExecuteProcess,
+    OpaqueFunction
+)
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+
+
+def start_gzserver(context, *args, **kwargs):
+    pkg_path = get_package_share_directory('pal_gazebo_worlds')
+    priv_pkg_path = get_package_share_directory('pal_gazebo_worlds_private')
+    world_name = LaunchConfiguration('world_name').perform(context)
+
+    world = ''
+    if os.path.exists(os.path.join(priv_pkg_path, 'worlds', world_name + '.world')):
+        world = os.path.join(priv_pkg_path, 'worlds', world_name + '.world')
+    elif os.path.exists(os.path.join(pkg_path, 'worlds', world_name + '.world')):
+        world = os.path.join(pkg_path, 'worlds', world_name + '.world')
+
+    params_file = PathJoinSubstitution(
+        substitutions=[pkg_path, 'config', 'gazebo_params.yaml'])
+
+    start_gazebo_server_cmd = ExecuteProcess(
+        cmd=['gzserver', '-s', 'libgazebo_ros_init.so',
+             '-s', 'libgazebo_ros_factory.so', world,
+             '--ros-args', '--params-file', params_file],
+        output='screen')
+
+    return [start_gazebo_server_cmd]
 
 
 def generate_launch_description():
-    # Attempt to find pal_gazebo_worlds_private, ignore if not available
+    # Attempt to find pal_gazebo_worlds_private, use pal_gazebo_worlds otherwise
     try:
         priv_pkg_path = get_package_share_directory(
             'pal_gazebo_worlds_private')
@@ -44,22 +72,11 @@ def generate_launch_description():
         resource_path += pathsep+environ['GAZEBO_RESOURCE_PATH']
 
     declare_world_name = DeclareLaunchArgument(
-            'world_name', default_value='',
-            description="Specify world name, we'll convert to full path"
-        )
+        'world_name', default_value='',
+        description="Specify world name, we'll convert to full path"
+    )
 
-    world_path = PathJoinSubstitution(
-        substitutions=[pkg_path, 'worlds',
-                       PythonExpression(['"', LaunchConfiguration('world_name'), '.world"'])])
-
-    params_file = PathJoinSubstitution(
-        substitutions=[pkg_path, 'config', 'gazebo_params.yaml'])
-
-    start_gazebo_server_cmd = ExecuteProcess(
-        cmd=['gzserver', '-s', 'libgazebo_ros_init.so',
-             '-s', 'libgazebo_ros_factory.so', world_path,
-             '--ros-args', '--params-file', params_file],
-        output='screen')
+    start_gazebo_server_cmd = OpaqueFunction(function=start_gzserver)
 
     start_gazebo_client_cmd = ExecuteProcess(
         cmd=['gzclient'], output='screen')
