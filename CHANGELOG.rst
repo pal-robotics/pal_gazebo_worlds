@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.3 (2023-12-22)
+------------------
 * Update pal_gazebo.launch.py
 * Contributors: antoniobrandi
 
