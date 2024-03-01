@@ -2,6 +2,12 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update icra_cylinder world
+* Add world file for stairs made of superposition of the planks
+* Contributors: David ter Kuile, Pierre Fernbach
+
 2.0.46 (2023-10-17)
 -------------------
 * Merge branch 'icra-demo' into 'erbium-devel'
