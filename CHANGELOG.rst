@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.47 (2024-03-01)
+-------------------
 * Update icra_cylinder world
 * Add world file for stairs made of superposition of the planks
 * Contributors: David ter Kuile, Pierre Fernbach
