@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.1.0 (2024-08-19)
+------------------
 * Merge branch 'man/added-aruco-office' into 'humble-devel'
   added pal_office_w_aruco
   See merge request common/pal_gazebo_worlds!69
