@@ -2,6 +2,15 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'man/added-aruco-office' into 'humble-devel'
+  added pal_office_w_aruco
+  See merge request common/pal_gazebo_worlds!69
+* Update small_office.world
+* added pal_office_w_aruco
+* Contributors: antoniobrandi, martinaannicelli
+
 4.0.4 (2024-07-01)
 ------------------
 * Use single quotes
