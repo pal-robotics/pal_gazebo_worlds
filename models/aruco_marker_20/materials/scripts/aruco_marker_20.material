@@ -1,0 +1,14 @@
+material ArucoMarker/ID20
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture aruco_marker_20.png
+            }
+        }
+    }
+}
