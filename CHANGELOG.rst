@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.2.0 (2024-08-20)
+------------------
 * Merge branch 'abr/pal-office-w-docks' into 'humble-devel'
   added pal_office_w_docks world
   See merge request common/pal_gazebo_worlds!70
