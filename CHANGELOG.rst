@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.2.1 (2024-08-20)
+------------------
 * Merge branch 'martinaannicelli-humble-devel-patch-03419' into 'humble-devel'
   Update pal_office_w_aruco.world
   See merge request common/pal_gazebo_worlds!71
