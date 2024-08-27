@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.3.0 (2024-08-27)
+------------------
 * added new aruco 0
 * Changed marker size
 * Contributors: martinaannicelli
