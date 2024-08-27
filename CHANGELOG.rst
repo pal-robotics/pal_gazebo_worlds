@@ -2,6 +2,12 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added new aruco 0
+* Changed marker size
+* Contributors: martinaannicelli
+
 4.2.1 (2024-08-20)
 ------------------
 * Merge branch 'martinaannicelli-humble-devel-patch-03419' into 'humble-devel'
