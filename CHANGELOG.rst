@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* modified aruco size for simulation
+* Contributors: martinaannicelli
+
 4.3.0 (2024-08-27)
 ------------------
 * added new aruco 0
