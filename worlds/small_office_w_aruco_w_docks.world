@@ -4511,10 +4511,10 @@
       <pose>-0.537023 -2 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>272 58000000</sim_time>
-      <real_time>275 837527713</real_time>
-      <wall_time>1752498450 610912480</wall_time>
-      <iterations>272058</iterations>
+      <sim_time>354 417000000</sim_time>
+      <real_time>86 38208615</real_time>
+      <wall_time>1752500112 196434264</wall_time>
+      <iterations>82359</iterations>
       <model name='aruco_marker_0'>
         <pose>4.89915 -4.4244 0.794514 3.14159 -1.56753 3.14159</pose>
         <scale>1 1 1</scale>
@@ -4675,6 +4675,16 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='dock_0'>
+        <pose>4.7532 -7.06057 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>4.7532 -7.06057 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -4781,7 +4791,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>1.54739 -10.0159 17.3604 3.14159 1.57079 3.14159</pose>
+        <pose>2.92624 -14.1421 26.2152 3.14159 1.57079 3.14159</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -4825,6 +4835,53 @@
     </model>
     <model name='dock'>
       <pose>0.402712 -12.1228 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.083</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.083</iyy>
+            <iyz>0</iyz>
+            <izz>0.083</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://dock1/meshes/dock1.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://dock1/meshes/dock1.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='dock_0'>
+      <pose>4.50292 -7.06057 0 0 -0 0</pose>
       <static>1</static>
       <link name='link'>
         <inertial>
