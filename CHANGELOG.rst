@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.5.0 (2025-07-25)
+------------------
 * added dock for pmb2
 * world with both aruco n dock
 * Contributors: martinaannicelli
