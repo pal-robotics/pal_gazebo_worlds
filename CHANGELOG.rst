@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.5.1 (2025-08-11)
+------------------
 * removed omni base, added xml version and changed sdf version
 * Contributors: salvatorepiccolo
 
