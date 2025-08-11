@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed omni base, added xml version and changed sdf version
+* Contributors: salvatorepiccolo
+
 4.5.0 (2025-07-25)
 ------------------
 * added dock for pmb2
