@@ -1,0 +1,14 @@
+material Apriltag/ID20
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture tag41_12_00020.png
+            }
+        }
+    }
+}
