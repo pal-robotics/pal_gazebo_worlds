@@ -2,6 +2,12 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* improved resolution of apriltag
+* added apriltag models and a pal office world with them
+* Contributors: andreacapodacqua, salvatorepiccolo
+
 4.5.1 (2025-08-11)
 ------------------
 * removed omni base, added xml version and changed sdf version
