@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.6.0 (2025-08-20)
+------------------
 * improved resolution of apriltag
 * added apriltag models and a pal office world with them
 * Contributors: andreacapodacqua, salvatorepiccolo
