@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.6.1 (2025-09-15)
+------------------
 * Remove unused params file
 * Fix the issue with the fixed clock rate on TALOS
 * Contributors: Sai Kishor Kothakota
