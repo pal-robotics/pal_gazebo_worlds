@@ -2,6 +2,12 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove unused params file
+* Fix the issue with the fixed clock rate on TALOS
+* Contributors: Sai Kishor Kothakota
+
 4.6.0 (2025-08-20)
 ------------------
 * improved resolution of apriltag
