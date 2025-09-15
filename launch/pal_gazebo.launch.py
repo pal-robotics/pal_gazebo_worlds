@@ -46,11 +46,13 @@ def start_gzserver(context, *args, **kwargs):
     params_file = PathJoinSubstitution(
         substitutions=[pkg_path, 'config', 'gazebo_params.yaml'])
 
+    gazebo_clock_rate = LaunchConfiguration('clock_rate').perform(context)
+
     # Command to start the gazebo server.
     gazebo_server_cmd_line = [
         'gzserver', '-s', 'libgazebo_ros_init.so',
         '-s', 'libgazebo_ros_factory.so', world,
-        '--ros-args', '--params-file', params_file]
+        '--ros-args', '--param', f"publish_rate:={gazebo_clock_rate}"]
     # Start the server under the gdb framework.
     debug = LaunchConfiguration('debug').perform(context)
     if debug == 'True':
@@ -95,6 +97,10 @@ def generate_launch_description():
         choices=['True', 'False'],
         description='If debug start the gazebo world into a gdb session in an xterm terminal'
     )
+    declare_clock_rate = DeclareLaunchArgument(
+        'clock_rate', default_value='200.0',
+        description='The rate at which the gazebo clock needs to be published!'
+    )
 
     start_gazebo_server_cmd = OpaqueFunction(function=start_gzserver)
 
@@ -106,6 +112,7 @@ def generate_launch_description():
 
     ld.add_action(declare_debug)
     ld.add_action(declare_world_name)
+    ld.add_action(declare_clock_rate)
 
     ld.add_action(SetEnvironmentVariable('GAZEBO_MODEL_PATH', model_path))
     # Using this prevents shared library from being found
