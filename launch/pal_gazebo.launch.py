@@ -24,7 +24,7 @@ from launch.actions import (
     ExecuteProcess,
     OpaqueFunction
 )
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+from launch.substitutions import LaunchConfiguration
 
 
 def start_gzserver(context, *args, **kwargs):
@@ -42,9 +42,6 @@ def start_gzserver(context, *args, **kwargs):
         world = os.path.join(priv_pkg_path, 'worlds', world_name + '.world')
     elif os.path.exists(os.path.join(pkg_path, 'worlds', world_name + '.world')):
         world = os.path.join(pkg_path, 'worlds', world_name + '.world')
-
-    params_file = PathJoinSubstitution(
-        substitutions=[pkg_path, 'config', 'gazebo_params.yaml'])
 
     gazebo_clock_rate = LaunchConfiguration('clock_rate').perform(context)
 
