@@ -1,0 +1,14 @@
+material ArucoMarkermap/ID1
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture aruco_markermap_1.png
+            }
+        }
+    }
+}
