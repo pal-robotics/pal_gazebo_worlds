@@ -2,6 +2,14 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/markermaps' into 'erbium-devel'
+  added arucos and markermaps
+  See merge request common/pal_gazebo_worlds!80
+* added arucos and markermaps
+* Contributors: antoniobrandi
+
 2.0.47 (2024-03-01)
 -------------------
 * Update icra_cylinder world
