@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="aruco_marker_0">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.385 0.385 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://aruco_marker_0/materials/scripts</uri>
+            <uri>model://aruco_marker_0/materials/textures</uri>
+            <name>ArucoMarker/ID0</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
