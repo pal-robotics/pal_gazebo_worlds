@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added markermaps
+* Contributors: antoniobrandi
+
 4.6.1 (2025-09-15)
 ------------------
 * Remove unused params file
