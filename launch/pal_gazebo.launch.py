@@ -25,6 +25,8 @@ from launch.actions import (
     OpaqueFunction
 )
 from launch.substitutions import LaunchConfiguration
+from launch.conditions import IfCondition
+from launch_pal.robot_arguments import CommonArgs
 
 
 def start_gzserver(context, *args, **kwargs):
@@ -102,7 +104,9 @@ def generate_launch_description():
     start_gazebo_server_cmd = OpaqueFunction(function=start_gzserver)
 
     start_gazebo_client_cmd = ExecuteProcess(
-        cmd=['gzclient'], output='screen')
+        cmd=['gzclient'], output='screen',
+        condition=IfCondition(LaunchConfiguration('gzclient'))
+    )
 
     # Create the launch description and populate
     ld = LaunchDescription()
@@ -110,7 +114,7 @@ def generate_launch_description():
     ld.add_action(declare_debug)
     ld.add_action(declare_world_name)
     ld.add_action(declare_clock_rate)
-
+    ld.add_action(CommonArgs.gzclient)
     ld.add_action(SetEnvironmentVariable('GAZEBO_MODEL_PATH', model_path))
     # Using this prevents shared library from being found
     # ld.add_action(SetEnvironmentVariable('GAZEBO_RESOURCE_PATH', resource_path))
