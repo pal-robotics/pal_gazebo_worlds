@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.8.0 (2025-10-09)
+------------------
 * added gzclient to launch arguments
 * Contributors: martinaannicelli
 
