@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added gzclient to launch arguments
+* Contributors: martinaannicelli
+
 4.7.0 (2025-10-07)
 ------------------
 * added markermaps
