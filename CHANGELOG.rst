@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added roscon_es_25 world
+* Contributors: andreacapodacqua
+
 4.8.0 (2025-10-09)
 ------------------
 * added gzclient to launch arguments
