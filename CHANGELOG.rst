@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.9.0 (2025-10-28)
+------------------
 * added roscon_es_25 world
 * Contributors: andreacapodacqua
 
