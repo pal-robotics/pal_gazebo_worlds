@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.10.0 (2025-11-05)
+-------------------
 * added new world for controller server tests
 * Contributors: martinaannicelli
 
