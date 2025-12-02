@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.11.2 (2025-12-02)
+-------------------
 * Update home_w_aruco.world
 * Contributors: martinaannicelli
 
