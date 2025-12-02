@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update home_w_aruco.world
+* Contributors: martinaannicelli
+
 4.11.1 (2025-11-28)
 -------------------
 * fix name
