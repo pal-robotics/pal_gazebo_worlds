@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.12.0 (2025-12-05)
+-------------------
 * Add support for new gazebo
 * remove unused import
 * Allow the user to start gazebo or ignition with launch argument.
