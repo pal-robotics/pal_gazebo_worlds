@@ -16,7 +16,7 @@ import os
 import pathlib
 from os import environ, pathsep
 
-from ament_index_python.packages import get_package_share_directory
+from ament_index_python.packages import get_package_share_directory, get_package_prefix
 
 from launch import LaunchDescription
 from launch.actions import (
@@ -95,14 +95,14 @@ def start_gazebo_classic(context, *args, **kwargs):
     return [start_gazebo_classic_server_cmd, start_gazebo_classic_client_cmd]
 
 
-def start_gazebo_ignition(context, *args, **kwargs):
+def start_gz(context, *args, **kwargs):
     pkg_path = get_pkg_path()
     priv_pkg_path = get_private_pkg_path()
     world_name = get_world_name(context)
     world = find_world(world_name, pkg_path, priv_pkg_path, '.sdf')
 
     # Command to start the gazebo server.
-    gazebo_server_cmd_line = ['ign', 'gazebo', '-v', '4', '-s', world]
+    gazebo_server_cmd_line = ['ign', 'gazebo', '-r', '-v', '4', '-s', world]
     # Start the server under the gdb framework.
     debug = LaunchConfiguration('debug').perform(context)
     if debug == 'True':
@@ -122,19 +122,10 @@ def start_gazebo_ignition(context, *args, **kwargs):
 
 
 def start_gazebo(context, *args, **kwargs):
+    actions = []
+
     gazebo_version = LaunchConfiguration('gazebo_version').perform(context)
-    if gazebo_version == 'ignition':
-        return [OpaqueFunction(function=start_gazebo_ignition)]
-    elif gazebo_version == 'classic':
-        return [OpaqueFunction(function=start_gazebo_classic)]
-    else:
-        return [ExecuteProcess(cmd=[
-            'echo', 'The given version of gazebo [{}] is wrong. '.format(gazebo_version) +
-            'Should be \'classic\' or \'ignition\''
-        ], output='screen')]
 
-
-def generate_launch_description():
     # Attempt to find pal_gazebo_worlds_private, use pal_gazebo_worlds otherwise
     try:
         priv_pkg_path = get_package_share_directory(
@@ -150,11 +141,37 @@ def generate_launch_description():
     model_path += os.path.join(pkg_path, 'models')
     resource_path += pkg_path
 
-    if 'GAZEBO_MODEL_PATH' in environ:
-        model_path += pathsep+environ['GAZEBO_MODEL_PATH']
-    if 'GAZEBO_RESOURCE_PATH' in environ:
-        resource_path += pathsep+environ['GAZEBO_RESOURCE_PATH']
+    if gazebo_version == 'gazebo':
+        if 'GZ_SIM_RESOURCE_PATH' in environ:
+            resource_path += pathsep+environ['GZ_SIM_RESOURCE_PATH']
 
+        system_plugin_path = os.path.join(get_package_prefix('gz_ros2_control'), 'lib')
+        if 'GZ_SIM_SYSTEM_PLUGIN_PATH' in environ:
+            system_plugin_path += pathsep + environ['GZ_SIM_SYSTEM_PLUGIN_PATH']
+
+        actions.append(SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', resource_path))
+        actions.append(SetEnvironmentVariable('GZ_SIM_SYSTEM_PLUGIN_PATH', system_plugin_path))
+        actions.append(OpaqueFunction(function=start_gz))
+    elif gazebo_version == 'classic':
+        if 'GAZEBO_MODEL_PATH' in environ:
+            model_path += pathsep+environ['GAZEBO_MODEL_PATH']
+        if 'GAZEBO_RESOURCE_PATH' in environ:
+            resource_path += pathsep+environ['GAZEBO_RESOURCE_PATH']
+
+        actions.append(SetEnvironmentVariable('GAZEBO_MODEL_PATH', model_path))
+        # Using this prevents shared library from being found
+        # actions.append(SetEnvironmentVariable('GAZEBO_RESOURCE_PATH', resource_path))
+        actions.append(OpaqueFunction(function=start_gazebo_classic))
+    else:
+        actions.append(ExecuteProcess(cmd=[
+            'echo', 'The given version of gazebo [{}] is wrong. '.format(gazebo_version) +
+            'Should be \'classic\' or \'gazebo\''
+        ], output='screen'))
+
+    return actions
+
+
+def generate_launch_description():
     declare_world_name = DeclareLaunchArgument(
         'world_name', default_value='',
         description="Specify world name, we'll convert to full path",
@@ -163,11 +180,6 @@ def generate_launch_description():
         'debug', default_value='False',
         choices=['True', 'False'],
         description='If debug start the gazebo world into a gdb session in an xterm terminal',
-    )
-    declare_gazebo_version = DeclareLaunchArgument(
-        'gazebo_version', default_value='classic',
-        choices=['ignition', 'classic'],
-        description='Version of Gazebo to be used, \'classic\' or \'ignition\'',
     )
     declare_clock_rate = DeclareLaunchArgument(
         'clock_rate', default_value='200.0',
@@ -181,11 +193,8 @@ def generate_launch_description():
     ld.add_action(declare_world_name)
     ld.add_action(declare_clock_rate)
     ld.add_action(CommonArgs.gzclient)
-    ld.add_action(declare_gazebo_version)
+    ld.add_action(CommonArgs.gazebo_version)
 
-    ld.add_action(SetEnvironmentVariable('GAZEBO_MODEL_PATH', model_path))
-    # Using this prevents shared library from being found
-    # ld.add_action(SetEnvironmentVariable('GAZEBO_RESOURCE_PATH', resource_path))
     ld.add_action(OpaqueFunction(function=start_gazebo))
 
     return ld
