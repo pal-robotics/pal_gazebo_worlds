@@ -2,6 +2,13 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add support for new gazebo
+* remove unused import
+* Allow the user to start gazebo or ignition with launch argument.
+* Contributors: Maximilien Naveau, Noel Jimenez
+
 4.11.2 (2025-12-02)
 -------------------
 * Update home_w_aruco.world
