@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.13.0 (2025-12-16)
+-------------------
 * fix to 95 cm
 * added 95 cm corridor for test
 * Contributors: andreacapodacqua
