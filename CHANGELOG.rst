@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add pal office for ignition
+* Contributors: thomasung
+
 4.13.0 (2025-12-16)
 -------------------
 * fix to 95 cm
