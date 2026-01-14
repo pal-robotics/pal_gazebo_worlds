@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.14.0 (2026-01-14)
+-------------------
 * add pal office for ignition
 * Contributors: thomasung
 
