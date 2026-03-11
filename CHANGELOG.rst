@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.14.1 (2026-03-11)
+-------------------
 * add imu system to envs
 * move plugin declarations to world xml tag
 * Contributors: thomasung
