@@ -2,6 +2,12 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add imu system to envs
+* move plugin declarations to world xml tag
+* Contributors: thomasung
+
 4.14.0 (2026-01-14)
 -------------------
 * add pal office for ignition
