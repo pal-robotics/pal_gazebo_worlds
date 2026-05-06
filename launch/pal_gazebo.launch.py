@@ -211,14 +211,6 @@ def generate_launch_description():
         'clock_rate', default_value='200.0',
         description='The rate at which the gazebo clock needs to be published!'
     )
-    declare_extra_resource_path = DeclareLaunchArgument(
-        'extra_resource_path', default_value='',
-        description='Extra Gazebo resource path to append before starting the simulator.',
-    )
-    declare_extra_model_path = DeclareLaunchArgument(
-        'extra_model_path', default_value='',
-        description='Extra Gazebo model path to append before starting the simulator.',
-    )
 
     # Create the launch description and populate
     ld = LaunchDescription()
@@ -226,8 +218,6 @@ def generate_launch_description():
     ld.add_action(declare_debug)
     ld.add_action(declare_world_name)
     ld.add_action(declare_clock_rate)
-    ld.add_action(declare_extra_resource_path)
-    ld.add_action(declare_extra_model_path)
     ld.add_action(CommonArgs.gzclient)
     ld.add_action(CommonArgs.gazebo_version)
 
