@@ -47,11 +47,20 @@ def get_world_name(context):
     return LaunchConfiguration('world_name').perform(context)
 
 
-def find_world(world_name, priv_pkg_path, pkg_path, extension):
-    world = pathlib.Path(world_name)
+def find_world(world_name, priv_pkg_path, pkg_path, default_extension):
+    world = pathlib.Path(world_name).expanduser()
+    world_file_name = world.name if world.suffix else f'{world.name}{default_extension}'
 
-    pkg_world_path = pkg_path / 'worlds' / (world_name + extension)
-    priv_pkg_world_path = priv_pkg_path / 'worlds' / (world_name + extension)
+    if world.suffix:
+        world_path = world
+    else:
+        world_path = world.with_name(world_file_name)
+
+    if world_path.is_file():
+        return str(world_path.resolve())
+
+    pkg_world_path = pkg_path / 'worlds' / world_file_name
+    priv_pkg_world_path = priv_pkg_path / 'worlds' / world_file_name
     if priv_pkg_world_path.is_file():
         world = str(priv_pkg_world_path)
     elif pkg_world_path.is_file():
@@ -125,6 +134,8 @@ def start_gazebo(context, *args, **kwargs):
     actions = []
 
     gazebo_version = LaunchConfiguration('gazebo_version').perform(context)
+    extra_resource_path = LaunchConfiguration('extra_resource_path').perform(context)
+    extra_model_path = LaunchConfiguration('extra_model_path').perform(context)
 
     # Attempt to find pal_gazebo_worlds_private, use pal_gazebo_worlds otherwise
     try:
@@ -142,17 +153,32 @@ def start_gazebo(context, *args, **kwargs):
     resource_path += pkg_path
 
     if gazebo_version == 'gazebo':
+        if extra_resource_path:
+            resource_path += pathsep + extra_resource_path
         if 'GZ_SIM_RESOURCE_PATH' in environ:
             resource_path += pathsep+environ['GZ_SIM_RESOURCE_PATH']
+
+        gazebo_model_path = extra_model_path
+        if 'GAZEBO_MODEL_PATH' in environ:
+            gazebo_model_path = (
+                f'{gazebo_model_path}{pathsep}{environ["GAZEBO_MODEL_PATH"]}'
+                if gazebo_model_path else environ['GAZEBO_MODEL_PATH']
+            )
 
         system_plugin_path = os.path.join(get_package_prefix('gz_ros2_control'), 'lib')
         if 'GZ_SIM_SYSTEM_PLUGIN_PATH' in environ:
             system_plugin_path += pathsep + environ['GZ_SIM_SYSTEM_PLUGIN_PATH']
 
         actions.append(SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', resource_path))
+        if gazebo_model_path:
+            actions.append(SetEnvironmentVariable('GAZEBO_MODEL_PATH', gazebo_model_path))
         actions.append(SetEnvironmentVariable('GZ_SIM_SYSTEM_PLUGIN_PATH', system_plugin_path))
         actions.append(OpaqueFunction(function=start_gz))
     elif gazebo_version == 'classic':
+        if extra_model_path:
+            model_path += pathsep + extra_model_path
+        if extra_resource_path:
+            resource_path += pathsep + extra_resource_path
         if 'GAZEBO_MODEL_PATH' in environ:
             model_path += pathsep+environ['GAZEBO_MODEL_PATH']
         if 'GAZEBO_RESOURCE_PATH' in environ:
@@ -185,6 +211,14 @@ def generate_launch_description():
         'clock_rate', default_value='200.0',
         description='The rate at which the gazebo clock needs to be published!'
     )
+    declare_extra_resource_path = DeclareLaunchArgument(
+        'extra_resource_path', default_value='',
+        description='Extra Gazebo resource path to append before starting the simulator.',
+    )
+    declare_extra_model_path = DeclareLaunchArgument(
+        'extra_model_path', default_value='',
+        description='Extra Gazebo model path to append before starting the simulator.',
+    )
 
     # Create the launch description and populate
     ld = LaunchDescription()
@@ -192,6 +226,8 @@ def generate_launch_description():
     ld.add_action(declare_debug)
     ld.add_action(declare_world_name)
     ld.add_action(declare_clock_rate)
+    ld.add_action(declare_extra_resource_path)
+    ld.add_action(declare_extra_model_path)
     ld.add_action(CommonArgs.gzclient)
     ld.add_action(CommonArgs.gazebo_version)
 
