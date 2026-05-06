@@ -75,7 +75,7 @@ def start_gazebo_classic(context, *args, **kwargs):
     pkg_path = get_pkg_path()
     priv_pkg_path = get_private_pkg_path()
     world_name = get_world_name(context)
-    world = find_world(world_name, pkg_path, priv_pkg_path, '.world')
+    world = find_world(world_name, priv_pkg_path, pkg_path, '.world')
     gazebo_clock_rate = LaunchConfiguration('clock_rate').perform(context)
 
     # Command to start the gazebo server.
@@ -108,7 +108,7 @@ def start_gz(context, *args, **kwargs):
     pkg_path = get_pkg_path()
     priv_pkg_path = get_private_pkg_path()
     world_name = get_world_name(context)
-    world = find_world(world_name, pkg_path, priv_pkg_path, '.sdf')
+    world = find_world(world_name, priv_pkg_path, pkg_path, '.sdf')
 
     # Command to start the gazebo server.
     gazebo_server_cmd_line = ['ign', 'gazebo', '-r', '-v', '4', '-s', world]
@@ -134,9 +134,6 @@ def start_gazebo(context, *args, **kwargs):
     actions = []
 
     gazebo_version = LaunchConfiguration('gazebo_version').perform(context)
-    extra_resource_path = LaunchConfiguration('extra_resource_path').perform(context)
-    extra_model_path = LaunchConfiguration('extra_model_path').perform(context)
-
     # Attempt to find pal_gazebo_worlds_private, use pal_gazebo_worlds otherwise
     try:
         priv_pkg_path = get_package_share_directory(
@@ -153,12 +150,9 @@ def start_gazebo(context, *args, **kwargs):
     resource_path += pkg_path
 
     if gazebo_version == 'gazebo':
-        if extra_resource_path:
-            resource_path += pathsep + extra_resource_path
         if 'GZ_SIM_RESOURCE_PATH' in environ:
             resource_path += pathsep+environ['GZ_SIM_RESOURCE_PATH']
 
-        gazebo_model_path = extra_model_path
         if 'GAZEBO_MODEL_PATH' in environ:
             gazebo_model_path = (
                 f'{gazebo_model_path}{pathsep}{environ["GAZEBO_MODEL_PATH"]}'
@@ -175,10 +169,6 @@ def start_gazebo(context, *args, **kwargs):
         actions.append(SetEnvironmentVariable('GZ_SIM_SYSTEM_PLUGIN_PATH', system_plugin_path))
         actions.append(OpaqueFunction(function=start_gz))
     elif gazebo_version == 'classic':
-        if extra_model_path:
-            model_path += pathsep + extra_model_path
-        if extra_resource_path:
-            resource_path += pathsep + extra_resource_path
         if 'GAZEBO_MODEL_PATH' in environ:
             model_path += pathsep+environ['GAZEBO_MODEL_PATH']
         if 'GAZEBO_RESOURCE_PATH' in environ:
