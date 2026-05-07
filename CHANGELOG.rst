@@ -2,6 +2,18 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added world for controller test
+* thread resolved
+* removing unused env var from ignition
+* removed uninitialized gazebo_model_path and using environment variable
+* fixing
+* flake8
+* fix
+* added check on sdf extension for ignition worlds
+* Contributors: martinaannicelli
+
 4.14.1 (2026-03-11)
 -------------------
 * add imu system to envs
