@@ -47,11 +47,20 @@ def get_world_name(context):
     return LaunchConfiguration('world_name').perform(context)
 
 
-def find_world(world_name, priv_pkg_path, pkg_path, extension):
-    world = pathlib.Path(world_name)
+def find_world(world_name, priv_pkg_path, pkg_path, default_extension):
+    world = pathlib.Path(world_name).expanduser()
+    world_file_name = world.name if world.suffix else f'{world.name}{default_extension}'
 
-    pkg_world_path = pkg_path / 'worlds' / (world_name + extension)
-    priv_pkg_world_path = priv_pkg_path / 'worlds' / (world_name + extension)
+    if world.suffix:
+        world_path = world
+    else:
+        world_path = world.with_name(world_file_name)
+
+    if world_path.is_file():
+        return str(world_path.resolve())
+
+    pkg_world_path = pkg_path / 'worlds' / world_file_name
+    priv_pkg_world_path = priv_pkg_path / 'worlds' / world_file_name
     if priv_pkg_world_path.is_file():
         world = str(priv_pkg_world_path)
     elif pkg_world_path.is_file():
@@ -66,7 +75,7 @@ def start_gazebo_classic(context, *args, **kwargs):
     pkg_path = get_pkg_path()
     priv_pkg_path = get_private_pkg_path()
     world_name = get_world_name(context)
-    world = find_world(world_name, pkg_path, priv_pkg_path, '.world')
+    world = find_world(world_name, priv_pkg_path, pkg_path, '.world')
     gazebo_clock_rate = LaunchConfiguration('clock_rate').perform(context)
 
     # Command to start the gazebo server.
@@ -99,7 +108,7 @@ def start_gz(context, *args, **kwargs):
     pkg_path = get_pkg_path()
     priv_pkg_path = get_private_pkg_path()
     world_name = get_world_name(context)
-    world = find_world(world_name, pkg_path, priv_pkg_path, '.sdf')
+    world = find_world(world_name, priv_pkg_path, pkg_path, '.sdf')
 
     # Command to start the gazebo server.
     gazebo_server_cmd_line = ['ign', 'gazebo', '-r', '-v', '4', '-s', world]
@@ -125,7 +134,6 @@ def start_gazebo(context, *args, **kwargs):
     actions = []
 
     gazebo_version = LaunchConfiguration('gazebo_version').perform(context)
-
     # Attempt to find pal_gazebo_worlds_private, use pal_gazebo_worlds otherwise
     try:
         priv_pkg_path = get_package_share_directory(
