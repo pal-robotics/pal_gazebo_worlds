@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.15.0 (2026-05-07)
+-------------------
 * Added world for controller test
 * thread resolved
 * removing unused env var from ignition
