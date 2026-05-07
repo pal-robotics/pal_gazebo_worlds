@@ -158,7 +158,6 @@ def start_gazebo(context, *args, **kwargs):
             system_plugin_path += pathsep + environ['GZ_SIM_SYSTEM_PLUGIN_PATH']
 
         actions.append(SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', resource_path))
-        actions.append(SetEnvironmentVariable('GAZEBO_MODEL_PATH', model_path))
         actions.append(SetEnvironmentVariable('GZ_SIM_SYSTEM_PLUGIN_PATH', system_plugin_path))
         actions.append(OpaqueFunction(function=start_gz))
     elif gazebo_version == 'classic':
