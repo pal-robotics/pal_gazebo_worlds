@@ -154,18 +154,14 @@ def start_gazebo(context, *args, **kwargs):
             resource_path += pathsep+environ['GZ_SIM_RESOURCE_PATH']
 
         if 'GAZEBO_MODEL_PATH' in environ:
-            gazebo_model_path = (
-                f'{gazebo_model_path}{pathsep}{environ["GAZEBO_MODEL_PATH"]}'
-                if gazebo_model_path else environ['GAZEBO_MODEL_PATH']
-            )
+            model_path += pathsep+environ['GAZEBO_MODEL_PATH']
 
         system_plugin_path = os.path.join(get_package_prefix('gz_ros2_control'), 'lib')
         if 'GZ_SIM_SYSTEM_PLUGIN_PATH' in environ:
             system_plugin_path += pathsep + environ['GZ_SIM_SYSTEM_PLUGIN_PATH']
 
         actions.append(SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', resource_path))
-        if gazebo_model_path:
-            actions.append(SetEnvironmentVariable('GAZEBO_MODEL_PATH', gazebo_model_path))
+        actions.append(SetEnvironmentVariable('GAZEBO_MODEL_PATH', model_path))
         actions.append(SetEnvironmentVariable('GZ_SIM_SYSTEM_PLUGIN_PATH', system_plugin_path))
         actions.append(OpaqueFunction(function=start_gz))
     elif gazebo_version == 'classic':
