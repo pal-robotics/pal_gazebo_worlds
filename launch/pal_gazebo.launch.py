@@ -153,9 +153,6 @@ def start_gazebo(context, *args, **kwargs):
         if 'GZ_SIM_RESOURCE_PATH' in environ:
             resource_path += pathsep+environ['GZ_SIM_RESOURCE_PATH']
 
-        if 'GAZEBO_MODEL_PATH' in environ:
-            model_path += pathsep+environ['GAZEBO_MODEL_PATH']
-
         system_plugin_path = os.path.join(get_package_prefix('gz_ros2_control'), 'lib')
         if 'GZ_SIM_SYSTEM_PLUGIN_PATH' in environ:
             system_plugin_path += pathsep + environ['GZ_SIM_SYSTEM_PLUGIN_PATH']
