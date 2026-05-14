@@ -1,0 +1,2 @@
+ament_prepend_unique_value GZ_SIM_RESOURCE_PATH "@CMAKE_INSTALL_PREFIX@/share/@PROJECT_NAME@/models"
+ament_prepend_unique_value GAZEBO_MODEL_PATH "@CMAKE_INSTALL_PREFIX@/share/@PROJECT_NAME@/models"
