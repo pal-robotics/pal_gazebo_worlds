@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.15.1 (2026-06-03)
+-------------------
 * register models using ament hooks
 * Contributors: thomasung
 
