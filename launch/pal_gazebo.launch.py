@@ -150,25 +150,13 @@ def start_gazebo(context, *args, **kwargs):
     resource_path += pkg_path
 
     if gazebo_version == 'gazebo':
-        if 'GZ_SIM_RESOURCE_PATH' in environ:
-            resource_path += pathsep+environ['GZ_SIM_RESOURCE_PATH']
-
         system_plugin_path = os.path.join(get_package_prefix('gz_ros2_control'), 'lib')
         if 'GZ_SIM_SYSTEM_PLUGIN_PATH' in environ:
             system_plugin_path += pathsep + environ['GZ_SIM_SYSTEM_PLUGIN_PATH']
 
-        actions.append(SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', resource_path))
         actions.append(SetEnvironmentVariable('GZ_SIM_SYSTEM_PLUGIN_PATH', system_plugin_path))
         actions.append(OpaqueFunction(function=start_gz))
     elif gazebo_version == 'classic':
-        if 'GAZEBO_MODEL_PATH' in environ:
-            model_path += pathsep+environ['GAZEBO_MODEL_PATH']
-        if 'GAZEBO_RESOURCE_PATH' in environ:
-            resource_path += pathsep+environ['GAZEBO_RESOURCE_PATH']
-
-        actions.append(SetEnvironmentVariable('GAZEBO_MODEL_PATH', model_path))
-        # Using this prevents shared library from being found
-        # actions.append(SetEnvironmentVariable('GAZEBO_RESOURCE_PATH', resource_path))
         actions.append(OpaqueFunction(function=start_gazebo_classic))
     else:
         actions.append(ExecuteProcess(cmd=[
