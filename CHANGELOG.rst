@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* register models using ament hooks
+* Contributors: thomasung
+
 4.15.0 (2026-05-07)
 -------------------
 * Added world for controller test
