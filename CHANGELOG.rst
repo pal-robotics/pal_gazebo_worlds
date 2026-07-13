@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.16.0 (2026-07-13)
+-------------------
 * uniformed arucos to standard dimension
 * Contributors: martinaannicelli
 
