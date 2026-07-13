@@ -2,6 +2,11 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* uniformed arucos to standard dimension
+* Contributors: martinaannicelli
+
 4.15.1 (2026-06-03)
 -------------------
 * register models using ament hooks
