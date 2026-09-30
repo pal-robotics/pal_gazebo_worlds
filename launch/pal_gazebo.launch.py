@@ -111,7 +111,9 @@ def start_gz(context, *args, **kwargs):
     world = find_world(world_name, priv_pkg_path, pkg_path, '.sdf')
 
     # Command to start the gazebo server.
-    gazebo_server_cmd_line = ['ign', 'gazebo', '-r', '-v', '4', '-s', world]
+    # humble uses Gazebo Fortress ('ign gazebo'), later distros 'gz sim'
+    gz_cmd = ['ign', 'gazebo'] if environ.get('ROS_DISTRO') == 'humble' else ['gz', 'sim']
+    gazebo_server_cmd_line = gz_cmd + ['-r', '-v', '4', '-s', world]
     # Start the server under the gdb framework.
     debug = LaunchConfiguration('debug').perform(context)
     if debug == 'True':
@@ -123,7 +125,7 @@ def start_gz(context, *args, **kwargs):
         cmd=gazebo_server_cmd_line, output='screen')
 
     start_gazebo_client_cmd = ExecuteProcess(
-        cmd=['ign', 'gazebo', '-v', '4', '-g'], output='screen',
+        cmd=gz_cmd + ['-v', '4', '-g'], output='screen',
         condition=IfCondition(LaunchConfiguration('gzclient'))
     )
 
