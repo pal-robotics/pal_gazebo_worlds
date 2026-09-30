@@ -13,20 +13,20 @@
 # limitations under the License.
 
 import os
-import pathlib
 from os import environ, pathsep
+import pathlib
 
-from ament_index_python.packages import get_package_share_directory, get_package_prefix
+from ament_index_python.packages import get_package_prefix, get_package_share_directory
 
 from launch import LaunchDescription
 from launch.actions import (
     DeclareLaunchArgument,
-    SetEnvironmentVariable,
     ExecuteProcess,
     OpaqueFunction,
+    SetEnvironmentVariable,
 )
-from launch.substitutions import LaunchConfiguration
 from launch.conditions import IfCondition
+from launch.substitutions import LaunchConfiguration
 from launch_pal.robot_arguments import CommonArgs
 
 
@@ -39,7 +39,7 @@ def get_private_pkg_path():
     try:
         priv_pkg_path = pathlib.Path(get_package_share_directory('pal_gazebo_worlds_private'))
     except Exception:
-        print("Private gazebo world package not found.")
+        print('Private gazebo world package not found.')
     return priv_pkg_path
 
 
@@ -66,7 +66,7 @@ def find_world(world_name, priv_pkg_path, pkg_path, default_extension):
     elif pkg_world_path.is_file():
         world = str(pkg_world_path)
     else:
-        print("World file not found.")
+        print('World file not found.')
         world = str('')
     return world
 
@@ -82,7 +82,7 @@ def start_gazebo_classic(context, *args, **kwargs):
     gazebo_server_cmd_line = [
         'gzserver', '-s', 'libgazebo_ros_init.so',
         '-s', 'libgazebo_ros_factory.so', world,
-        '--ros-args', '--param', f"publish_rate:={gazebo_clock_rate}"]
+        '--ros-args', '--param', f'publish_rate:={gazebo_clock_rate}']
     # Start the server under the gdb framework.
     debug = LaunchConfiguration('debug').perform(context)
     if debug == 'True':
@@ -163,7 +163,7 @@ def start_gazebo(context, *args, **kwargs):
     else:
         actions.append(ExecuteProcess(cmd=[
             'echo', 'The given version of gazebo [{}] is wrong. '.format(gazebo_version) +
-            'Should be \'classic\' or \'gazebo\''
+            "Should be 'classic' or 'gazebo'"
         ], output='screen'))
 
     return actions
