@@ -2,6 +2,20 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix flake tests
+* Add different gz commands to start the new gazebo depending the version
+* Drop support for cmake < 3.5
+  Compatibility with CMake < 3.5 has been removed from CMake.
+  Update the VERSION argument <min> value.  Or, use the <min>...<max>
+  syntax
+  to tell CMake that the project requires at least <min> but has been
+  updated
+  to work with policies introduced by <max> or earlier.
+  Or, add -DCMAKE_POLICY_VERSION_MINIMUM=3.5 to try configuring anyway.
+* Contributors: Aina, thomasung
+
 4.16.0 (2026-07-13)
 -------------------
 * uniformed arucos to standard dimension
