@@ -2,8 +2,8 @@
 Changelog for package pal_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.16.1 (2026-10-01)
+-------------------
 * Fix flake tests
 * Add different gz commands to start the new gazebo depending the version
 * Drop support for cmake < 3.5
